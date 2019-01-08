@@ -89,7 +89,7 @@ ul.logos-list {
 
 .show-logo img {
 	max-width: 100%;
-	width: 9%;
+	width: 15%;
 	border-right: 2px solid #000;
 	padding: 3px 7px 3px 0;
 }
@@ -328,6 +328,10 @@ div.about {
 
 .about p {
 	text-align: right;
+}
+
+.container-bbb {
+	float: left;
 }
 
 /*Responsive*/

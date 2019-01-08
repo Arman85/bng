@@ -78,10 +78,12 @@
     <!-- Menu -->
     <div class="menu mymenu"  :class="{ sShadow: shadow }">
         <!-- logo  -->
-        <a class="show-logo">
-           <img src="{{ asset('img/bglogo.png') }}" alt="Biongroup">
-           <span>Оценочная компания</span> 
-        </a>
+        <div class="container-bbb">
+            <a class="show-logo">
+                <img src="{{ asset('img/bglogo.png') }}" alt="Biongroup">
+                <span>Оценочная компания</span> 
+            </a>
+        </div>
         <!-- end logo -->
         <!-- Search bar -->
         <div class="search">
