@@ -1,0 +1,1153 @@
+@media (min-width: 1024px) {
+	#loop2, 
+	#tel2,
+	#logo2 {
+		display: none !important;
+	}
+	.showMob {
+		display: none !important;
+	}
+	.hideMobAbout {
+		display: none;
+	}
+	.phoneMore {
+		display: none;
+		float: right;
+	}
+
+.banksImgMob {
+	display: none;
+}
+
+.banksImgDesk {
+	display: block;
+}
+.order {
+	display: none;
+}
+.mobile-menu {
+	display: none;
+}
+.sent {
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100px;
+    background: orange;
+}
+.sentMob {
+	display: none !important;
+}
+.sent a {
+	display: block;
+	border: 1px solid #000;
+	padding: 3px 25px;
+	border-radius: 3px;
+	text-align: center;
+	margin: 0 auto;
+	width: 15%;
+	font-size: 1.2em;
+	font-family: Semibold;
+	float: right;
+	margin-top: -20px;
+	margin-right: 10px;
+	color: #fff !important;
+}
+.orange {
+	width: 20%;
+	height: 100px;
+	float: left;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ef7f1a;
+}
+
+.orange div {
+	width: 50px;
+	height: 50px;
+	background: url('../img/common/icons/plane.png') no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	margin-right: 10px;
+}
+
+.orange p {
+	font-size: 0.8em;
+	height: 50px;
+	margin-bottom: 0;
+	padding-top: 10px;
+	color: #fff;
+	line-height: 16px;
+}
+
+.orange p span {
+	font-size: 1.75em;
+	font-family: Semibold;
+	line-height: 5px;
+}
+
+.sent-title {
+	width: 60%;
+	font-size: 2em;
+	line-height: 1em;
+	font-family: Bold;
+	float: left;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-left: 10px;
+	color: #fff;
+}
+
+.sent-text {
+	width: 60%;
+	font-size: 1.3em;
+	line-height: 1em;
+	float: left;
+	margin: 0 auto;
+	margin-left: 10px;
+	color: #fff;
+}
+
+.rrr {
+	display: none;
+}
+
+
+/**/
+
+
+.chooseCity {
+	display: none;
+	position: fixed;
+	top: 90px;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,.8);
+}
+
+.chooseCity img {
+	height:  50px;
+	display: block;
+}
+
+.chooseCity p {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
+	color: #fff;
+	margin-bottom: 15px;
+	padding: 10px;
+	width: 102%;
+	text-align: center;
+	cursor: pointer;
+	margin-left: -1%;
+}
+.chooseCity p span {
+	padding-left: 10px;
+}
+p.cs1 {
+color: #000;
+padding-top: 30px;
+line-height: 1;
+margin-bottom: -10px;
+font-size: 1.75em;
+}
+
+p.cs2 {
+	color: #000;
+	line-height: 1;
+	font-size: 1em;
+	margin-bottom: 30px;
+	padding: 0;
+
+}
+.chooseCity .hideChooseCity {
+	cursor: pointer;
+    font-size: 1.5em;
+    border: 1px solid #000;
+    color: #000;
+    text-align: center;
+    display: block;
+    padding: 0 10px;
+    max-width: 55%;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+.chooseCity .after {
+	height: 20px;
+	display: block;
+	width: 100%;
+}
+.chooseShymkent,
+.chooseAlmaty {
+	background-color: #ff8a00;
+}
+
+.chooseCity .wrap {
+	width: 50%;
+	margin: 10% auto;
+	min-height: 40%;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+
+
+/* Mobile menu */
+
+.mobile-menu {
+	display: none;
+	position: fixed;
+	top: 90px;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	height: calc(100vh - 90px);
+	background-color: rgb(255,255,255);
+	background: #fff url(../img/mobilemenu/bg-mm2.png) repeat-x;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 0 -200px;
+}
+
+.hideOnDesk {
+	display: none !important;
+}
+
+.mbx {
+	height: 68.25%;
+	overflow-y: auto;
+	padding-bottom: 35px;
+	margin-top: 15px;
+}
+
+.mobile-menu hr {
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    bottom: 110px;
+    width: 52%;
+    float: right;
+    margin-right: 68px;
+    display: block;
+    background-color: #8c8c8c;
+    margin-top: 20px;
+}
+
+.mobile-menu .last {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 30px;
+	background: #00a1ef;
+	padding: 5px 10px;
+	width: 100%;
+}
+.mobile-menu .last p {
+	color: #fff;
+	font-size: 0.8em;
+	padding-right: 1%;
+	padding-top: 2px;
+	float: right;
+}
+._bion {
+	display: block;
+    height: 20px;
+    float: right;
+    margin-right: 48px;
+    border-left: 1px solid #fff; 
+    margin-top: 1px;
+    padding-left: 1%;
+}
+._lab {
+    display: block;
+    position: absolute;
+    height: 100px;
+    right: 62px;
+    top: -124px;
+    /* margin-top: -175px; */
+}
+.mobile-menu p.text {
+font-size: 1em;
+    position: absolute; 
+    bottom: 50px; 
+    right: 0;
+    color: #000;
+    padding-right: 68px;
+    width: 56%;
+    float: right;
+    margin: 0 auto;
+    text-align: right;
+    line-height: 1;
+    margin-top: 20px;
+}
+.mb0,
+.mb1,
+.mb2 {
+	display: none;
+}
+.mb4 img.orde {
+	margin-right: 31px;
+}
+.mb4{
+	cursor: pointer;
+    width: 55%;
+    float: right;
+    padding: 10px 25px 0;
+}
+.mb4 div {
+	width: 100%;
+}
+.mb4 .top {
+	color: #000;
+	text-align: right;
+	padding-right: 90px;
+	font-size: 1.4em;
+	    line-height: 22px;
+    margin: 13px 0 0;
+    margin-bottom: 0;
+}
+.mb4 .bot {
+	color: #000;
+	text-align: right;
+width: 100%;
+font-size: 1em;
+padding-right: 90px;
+margin-bottom: 0;
+	}
+.mb4 img {
+	height: 30px;
+	display: block;
+	float: right;
+	margin-right: 38px;
+}
+._map {
+	height: 38px !important;
+}
+._insta {
+	height: 40px !important;
+}
+._write {
+	height: 43px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****/
+
+
+
+
+
+/************ order */
+
+/*order */
+
+
+
+.order {
+	display: none;
+	position: fixed;
+	top: 90px;
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	height: calc(100vh - 90px);
+	background-color: rgb(255,255,255);
+	background: #fff url(../img/mobilemenu/bg-mm2.png) repeat-x;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 0 -200px;
+}
+
+.or2 {
+	overflow-y: auto;
+	margin-right: 20px;
+}
+
+.or1 {
+	width: 100%;
+	height: 8.6%; /* 55 / 640 */
+	padding: 15px 25px;
+}
+.or1 p{
+	margin-bottom: 0;
+    line-height: 30px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    float: left;
+}
+.or1 span {
+	display: block;
+	height: 30px;
+	font-size: 3em;
+	font-family: Calibri;
+	cursor: pointer;
+	line-height: 20px;
+	float: right;
+}
+
+.order .last {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 4%;
+	background: #007bff;
+	padding: 3px 10px;
+	width: 100%;
+}
+.order .last p {
+color: #fff;
+    font-size: 0.8em;
+    text-align: right;
+    padding-right: 11%;
+    padding-top: 5px;
+}
+.order .last ._bion {
+	margin-top: 4px;
+	margin-right: 10px;
+	padding-right: 7px;
+}
+
+.orp {
+text-align: right;
+    color: #000;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.servWrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	margin: 0 20px;
+	width: 50%;
+	float: right;
+	
+}
+.serv {
+	width: 19%;
+	display: block;
+	padding: 15px 15px;
+	margin: 0 0.5%;
+	border: 1px solid #000;
+	margin-bottom: 3%;
+	transition: 0.3s background ease;
+}
+.serv svg {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
+.serv svg path {
+	fill: #000;
+}
+.serv p {
+	font-size: 0.9em;
+	margin-top: 5px;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #000;
+	margin-bottom: 0;
+	line-height: 1em;
+}
+
+.serv:active {
+	border: 1px solid #000;
+	border-radius: 3px;
+}
+.serv.Act {
+	border: 1px solid #000;
+	border-radius: 3px;
+}
+.orb {
+	margin-top: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	clear: right;
+}
+
+.serv.ORANGE {
+	background: orange;
+	border: 0;
+}
+.orb a {
+	display: block;
+	padding: 0 25px;
+	color: #000 !important;
+	border: 1px solid #000;
+	border-radius: 3px;
+	font-size: 1.3em;
+	background: transparent;
+	transition: background 0.5s ease;
+}
+
+.orb .go {
+	margin-left: 20px;
+}
+
+.go.orangeChoose {
+	background: orange;
+	border: 0;
+}
+
+.order hr {
+    margin: 0 auto;
+    width: 65%;
+    display: block;
+    background-color: #000;
+    bottom: 90px;
+    right: 20px;
+    position: fixed;
+}
+
+.order p.text {
+    font-size: 1em;
+    color: #000;
+    width: 80%;
+    /* margin: 0 auto; */
+    text-align: right;
+    line-height: 1em;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 30px;
+    width: 60%;
+    /* left: 10%; */
+    display: block;
+    right: 20px;
+}
+/**/
+
+
+/*SERVICE ONE*/
+
+.service {
+	display: none;
+	position: fixed;
+	top: 90px;
+	z-index: 1001;
+	width: 100vw;
+	height: 100vh;
+	height: calc(100vh - 90px);
+	background-color: rgb(255,255,255);
+	background: #fff url(../img/mobilemenu/bg-mm2.png) repeat-x;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 0 -200px;
+}
+
+.sr2 {
+	overflow-y: auto;
+	width: 100%;
+}
+
+.sr1 {
+	width: 100%;
+	height: 8.6%; /* 55 / 640 */
+	padding: 15px 25px;
+}
+
+.sr1 span {
+	float: right;
+}
+.service .last {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 4%;
+	background: #007bff;
+	padding: 3px 10px;
+	width: 100%;
+}
+.service .last p {
+	color: #fff;
+	float: right;
+	padding-right: 10px;
+
+	margin-top: 4px;
+	font-size: 0.8em;
+	padding-left: 19%;
+	padding-top: 1px;
+}
+.service .last ._bion {
+	margin-top: 4px;
+	margin-right: 10px;
+	padding-right: 7px;
+}
+
+.srp {
+color: #000;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 29px;
+    text-align: right;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+.srp svg {
+	width: 40px;
+	position: relative;
+    top: 9px;
+    left: -9px;
+}
+.srb {
+margin-top: 20px;
+    display: block;
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.srb input {
+	display: block;
+	width: 95%;
+	width: calc(100% - 40px);
+	padding: 3px 10px;
+	border: 1px solid #000;
+	font-size: 1.3em;
+	background: transparent;
+	border-radius: 3px;
+	color: #000 !important;
+	margin: 0 20px 10px;
+}
+.srb button {
+	display: block;
+	padding: 3px 25px;
+	float: right;
+	color: #fff !important;
+	font-size: 1.2em;
+	background: orange;
+	transition: background 0.5s ease;
+	margin-right: 20px;
+	border: 0;
+
+}
+.srb input::-webkit-input-placeholder {
+	color: #000 !important;
+}
+.service .mtxt {
+    font-size: 1em;
+    line-height: 1;
+    color: #000 !important;
+    margin: 0 20px;
+    text-align: right;
+    padding-right: 20px;
+    width: 65%;
+    float: right;
+}
+.service .mtxt p {
+	margin-bottom: 0.5em;
+}
+.service hr {
+    margin: 0 auto;
+    width: 65%;
+    display: block;
+    background-color: #000;
+    bottom: 90px;
+    right: 20px;
+    position: fixed;
+}
+
+.service p.text {
+    font-size: 1em;
+    color: #000;
+    width: 80%;
+    /* margin: 0 auto; */
+    text-align: right;
+    line-height: 1em;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 30px;
+    width: 60%;
+    /* left: 10%; */
+    display: block;
+    right: 20px;
+}
+/**/
+
+
+/* choose map */
+
+.choose-map {
+	display: none;
+	position: fixed;
+	top: 90px;
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	height: calc(100vh - 90px);
+	background: rgba(0,0,0,.8);
+}
+
+.choose-map img {
+	height:  30px;
+	display: block;
+}
+
+.choose-map p {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	font-size: 1em;
+	color: #fff;
+	margin-bottom: 15px;
+	padding: 10px;
+	width: 102%;
+	text-align: left;
+	cursor: pointer;
+	margin-left: -1%;
+	line-height: 1;
+}
+.choose-map p span {
+	padding-left: 10px;
+	margin-top: 8px;
+}
+.choose-map p span k {
+	font-size: 1.75em;
+	line-height: 0.7;
+}
+p.cm1 {
+	color: #000;
+	padding-top: 30px;
+	line-height: 0.5;
+	margin-bottom: 0;
+	font-size: 1.75em;
+	text-align: center;
+}
+
+p.cm2 {
+color: #000;
+    line-height: 1;
+    font-size: 1em;
+    margin: 0 auto 17px;
+    text-align: center;
+    width: 87%;
+    padding: 0;
+
+}
+.choose-map .hideMapChoose {
+cursor: pointer;
+    font-size: 1em;
+    border: 1px solid #000;
+    color: #000;
+    text-align: center;
+    display: block;
+    padding: 0 10px;
+    max-width: 55%;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+.choose-map .after {
+	height: 20px;
+	display: block;
+	width: 100%;
+}
+.map1,
+.map2,
+.map3
+{
+	background-color: #ff8a00;
+}
+
+.choose-map .wrap {
+	width: 400px;
+	margin: 10% auto;
+	min-height: 40%;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+.mapHeight {
+	width: 100%;
+	height: 100%;
+}
+
+/**/
+
+/** 2gis map*/
+
+
+.map-2gis {
+	display: none;
+	position: fixed;
+	top: 90px;
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	height: calc(100vh - 90px);
+	background-color: rgb(255,255,255);
+}
+
+.map-2gis .hideMap2gis {
+cursor: pointer;
+    font-size: 1em;
+    /* border: 1px solid #000; */
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 0 10px;
+    width: 100px;
+    border-radius: 3px;
+    margin: 0 auto;
+    z-index: 1000000;
+    margin-top: 4%;
+    background: orange;
+    position: fixed;
+    bottom: 8px;
+    box-shadow: 0 0 5px #999;
+    left: 125px;
+    z-index: 1000000;
+    width: 100px;
+}
+
+/** Yandex map*/
+
+
+.map-yandex {
+	display: none;
+	position: fixed;
+	top: 90px;
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	height: calc(100vh - 90px);
+	background-color: rgb(255,255,255);
+}
+
+.map-yandex .hideMapYandex {
+cursor: pointer;
+    font-size: 1em;
+    /* border: 1px solid #000; */
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 0 10px;
+    width: 100px;
+    border-radius: 3px;
+    margin: 0 auto;
+    z-index: 1000000;
+    margin-top: 4%;
+    background: orange;
+    position: fixed;
+    bottom: 8px;
+    box-shadow: 0 0 5px #999;
+    left: 125px;
+    z-index: 1000000;
+    width: 100px;
+}
+
+/** Google map*/
+
+
+.map-google {
+	display: none;
+	position: fixed;
+	top: 90px;
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	height: calc(100vh - 90px);
+	background-color: rgb(255,255,255);
+}
+
+.map-google .hideMapGoogle {
+cursor: pointer;
+    font-size: 1em;
+    /* border: 1px solid #000; */
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 0 10px;
+    width: 100px;
+    border-radius: 3px;
+    margin: 0 auto;
+    z-index: 1000000;
+    margin-top: 4%;
+    background: orange;
+    position: fixed;
+    bottom: 8px;
+    box-shadow: 0 0 5px #999;
+    left: 125px;
+    z-index: 1000000;
+    width: 100px;
+}
+
+
+
+/*Message from mobile menu*/
+
+.message {
+	display: none;
+	position: fixed;
+	top: 90px;
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	height: calc(100vh - 90px);
+	background-color: rgb(255,255,255);
+	background: #fff url(../img/mobilemenu/bg-mm2.png) repeat-x;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 0 -200px;
+}
+
+.ms2 {
+	overflow-y: auto;
+	width: 100%;
+	height: 80vh;
+}
+
+.ms1 {
+	background: transparent;
+	width: 100%;
+	height: 8.6%; /* 55 / 640 */
+	padding: 15px 25px;
+}
+
+.ms1 span {
+	float: right;
+}
+.message .last {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 4%;
+	background: #007bff;
+	padding: 3px 10px;
+	width: 100%;
+}
+.message .last p {
+	color: #000;
+	font-size: 0.8em;
+	padding-left: 19%;
+	padding-top: 1px;
+}
+.message .last ._bion {
+	margin-top: 4px;
+	margin-right: 10px;
+	padding-right: 7px;
+}
+
+.msp {
+	color: #000;
+	font-size: 1.5em;
+	text-align: right;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-left: 29px;
+	margin-right: 40px;
+}
+.msp svg {
+	width: 40px;
+	position: relative;
+    top: 9px;
+    left: -9px;
+}
+.msb {
+	margin-top: 20px;
+	display: block;
+	margin-bottom: 50px;
+	width: 500px;
+	float: right;
+	margin-right: 60px;
+}
+
+.msb textarea,
+.msb input {
+	display: block;
+	width: 100%;
+	padding: 3px 10px;
+	border: 1px solid #ccc;
+	font-size: 1.3em;
+	background: transparent;
+	border-radius: 3px;
+	color: #000 !important;
+	margin: 0 20px 10px;
+}
+
+.msb textarea:focus {
+	color: #000 !important;
+}
+.msb button {
+	display: block;
+	padding: 3px 25px;
+	float: right;
+	color: #fff !important;
+	font-size: 1.2em;
+	background: orange;
+	transition: background 0.5s ease;
+	
+	border: 0;
+
+}
+.msb input::-webkit-input-placeholder {
+	color: #ccc !important;
+}
+.message hr {
+	margin: 0 auto;
+	width: 90%;
+	    position: fixed;
+    display: block;
+    bottom: 72px;
+    left: 5%;
+	background-color: #fff;
+}
+
+.message p.text {
+	font-size: 0.7em;
+	color: #000;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 0.8em;
+	margin-top: 20px;
+	position: fixed;
+    bottom: 40px;
+    left: 10%;
+}
+
+.message .last {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 4%;
+	background: #007bff;
+	padding: 3px 10px;
+	width: 100%;
+}
+.message .last p {
+	color: #000;
+	float: right;
+	padding-right: 10px;
+
+	margin-top: 4px;
+	font-size: 0.8em;
+	padding-left: 19%;
+	padding-top: 1px;
+}
+.message .last ._bion {
+	margin-top: 4px;
+	margin-right: 10px;
+	padding-right: 7px;
+}
+/**/
+
+/* rfrfr*/
+
+.my-tab {
+	min-height: 380px;
+}
+
+
+.actions .col-lg-6 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+.actions .col-lg-6:first-child {
+	padding-right: 20px;
+}
+
+
+.actions .col-lg-6:last-child {
+	padding-left: 20px;
+}
+
+
+
+.popup {
+    position: absolute;
+    right: 0;
+    top: 65px;
+    padding: 15px;
+    display: none;
+    width: 320px;
+    font-family: Bold;
+    background: #fff;
+    box-shadow: 0 0 5px #999;
+    z-index: 9999;
+    border-radius: 0 0 5px 5px;
+}
+
+.popup:before {
+	bottom: 100%;
+    right: 7%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-bottom-color: #00a1ef;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+
+
+.testimonials {
+	min-height: 560px;
+	align-items: center;
+}
+
+
+.hideCeo svg {
+	float: right;
+}
+
+.testimonials .col-lg-5 {
+	padding: 0 5%;
+}
+} /**/
+
+
+
+

@@ -1,0 +1,344 @@
+/*Arman css*/
+
+.header-container {
+	margin: 0 24px;
+	max-width: 1920px;
+}
+
+.btn-box {
+	text-align: center;
+}
+
+div.top-pannel-box h4::after {
+	width: 90%;
+}
+
+.btn-box a,
+div.top-pannel-content {
+	color: #000;
+}
+
+section.top-pannel {
+	background-color: initial;
+	background: url(../img/header-bg.png) no-repeat -150px -50px;
+	background-size: cover;
+	padding: 30px 0;
+}
+
+img#logo1 {
+	border-right: 3px solid #000;
+	max-width: 100%;
+	width: 100%;
+	padding: 2px 10px 2px 0;
+}
+
+a.logo {
+	display: block;
+}
+
+ul.logos-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	padding-top: 16px;
+}
+
+.logos-list li {
+	display: inline-block;
+}
+
+.logos-list li:nth-child(1){
+	width: 40%;
+}
+
+.logos-list li:nth-child(2){
+	position: relative;
+	width: 55%;
+	padding-left: 8px;
+}
+
+.logo-title1,
+.logo-title2{
+	text-transform: uppercase;
+	color: #000;
+	position: absolute;
+	width: 100%;
+}
+
+.logo-title1 {
+	font-size: 25px;
+	top: -45px;
+}
+
+.logo-title2 {
+	font-size: 15px;
+	top: -15px;
+}
+
+/*Navigation*/
+
+.mymenu {
+	background: url(../img/header-bg.png) no-repeat 100px 10%;
+	background-size: cover;
+	background-color: #fff;
+}
+
+.show-logo {
+	visibility: hidden;
+}
+
+.show-logo img {
+	max-width: 100%;
+	width: 9%;
+	border-right: 2px solid #000;
+	padding: 3px 7px 3px 0;
+}
+
+.show-logo span {
+	padding-left: 7px;
+	text-transform: uppercase;
+}
+
+/*Services menu*/
+.services-menu-wrapper {
+	width: 100%;
+	height: auto;
+	/*padding: 25px;*/
+}
+
+.services-menu-wrapper ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+.service-icons {
+	display: flex;
+	justify-content: center;
+	padding-left: 0;
+}
+
+.service-icons li {
+	width: 10%;
+	margin-right: 10%;
+	text-align: center;
+	line-height: 18px;
+}
+
+.service-icons li.icon-last {
+	margin-right: 0;
+}
+
+.service-icons li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+}
+
+.service-icons li a:hover {
+	color: #000;
+}
+
+.service-icons li a img {
+	margin-bottom: 10px;
+}
+
+.what-interested {
+	/*border-bottom: 3px solid #E4E4E4;*/
+	width: 100%;
+	padding: 35px 55px;
+	margin-bottom: 35px;
+}
+
+.what-interested h2 {
+	font-size: 4rem;
+}
+
+.what-interested h3 {
+	font-size: 2.5rem;
+}
+
+.what-interested h2,
+.what-interested h3 {
+	font-family: DINProCondensedMedium;
+	text-transform: initial;
+}
+
+.form-what-interested {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+}
+
+.form-what-interested input {
+	border-bottom: 2px solid #000;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	text-align: right;
+	margin-right: 30px;
+	color: #000;
+	font-size: 1.5rem;
+}
+
+.form-what-interested input:nth-of-type(3){
+	width: 350px;
+}
+
+.btn-what-interested {
+	background-color: #E1EFFB;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 2px 7px rgba(0,0,0, 0.5);
+	color: #000;
+	padding: 10px 15px 10px 100px;
+	font-size: 1.5rem;
+}
+
+.btn-what-interested:hover {
+	cursor: pointer;
+}
+
+.btn-what-interested img {
+	width: 25px;
+	max-width: 100%;
+	margin-left: 15px;
+}
+
+/*Как мы работаем*/
+
+div.hww h3 {
+	margin-bottom: 20px;
+}
+
+.hww h3,
+.hww h4,
+.hww p {
+	text-align: center;
+	text-transform: initial;
+}
+
+.hww h3,
+.hww h4 {
+	font-family: Bold;
+}
+
+.hww p {
+	font-family: Regular;
+	font-size: 1.3rem;
+}
+
+/*Почему выгодно работать с нами*/
+.profit h3,
+.waif h3,
+.experience h3,
+.our-reports-accept h3,
+div.licences h3.title {
+	font-family: Bold;
+	font-size: 3.5em;
+}
+
+.profit h3,
+.title,
+.waif h3,
+.experience h3,
+div.licences h3.title {
+	text-transform: initial;
+}
+
+/*Наши клиенты и партнеры*/
+div.partners {
+	background: url(../img/common/index/partners-bg.jpg) no-repeat center;
+	background-size: 100%;
+	padding: 100px 40px;
+	margin: 50px 0;
+}
+
+.title {
+	font-family: Bold;
+}
+
+/*Лицензии*/
+div.licences h3.title {
+	justify-content: center;
+}
+
+div.lic-slider, .lic2-slider, .lic3-slider {
+	width: 100%;
+}
+
+div.lic-slider .slick-prev {
+	left: 0;
+}
+
+div.lic-slider .slick-next {
+	right: 0;
+}
+
+/*Мы в цифрах*/
+.waif {
+	background: url(../img/common/index/mi-v-cifrah.jpg) no-repeat center center;
+	background-size: 100%;
+}
+
+/*Наши отчеты принимают*/
+.our-reports-accept {
+	padding: 50px 0 100px 0;
+}
+
+.our-reports-accept h3 {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+/*Оставьте заявку*/
+.leavereq h3 {
+	font-family: Bold;
+	text-transform: initial;
+}
+
+.leavereq p {
+	font-family: Regular;
+}
+
+.leavereq h3,
+.leavereq p {
+	text-align: left;
+}
+
+/*Карта*/
+.mymap-2gis {
+	height: 100vh;
+}
+
+/*About*/
+div.about {
+	background: url(../img/about.jpg) no-repeat center;
+	padding: 100px 18% 100px 50px;
+	background-size: 100%;
+}
+
+.about h3 {
+	text-align: right;
+}
+
+.about h3 img {
+	width: 20%;
+	max-width: 100%;
+}
+
+.about p {
+	text-align: right;
+}
+
+/*Responsive*/
+@media (min-width: 1550px) {
+	.btn-box {
+		width: 75%;
+	}
+}
+
+@media (min-width: 1920px) {
+	/*div.about {
+		background: url(../img/about.jpg) no-repeat center -550px;
+	}*/
+}
