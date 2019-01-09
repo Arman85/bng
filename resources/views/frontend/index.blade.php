@@ -34,6 +34,37 @@
 @include('frontend.partials._header')
 
 
+<!-- Start Popup welcome to site, and choose city -->
+<!-- Trigger/Open The Modal -->
+    <!-- Trigger/Open The Modal -->
+    <!-- <button id="myBtn">Open Modal</button> -->
+
+    <!-- The Modal -->
+    <div id="myModal-choose-city" class="modal-choose-city">
+
+      <!-- Modal content -->
+      <div class="modal-content-choose-city">
+        <div class="modal-header">
+          <h2 class="title-popup">Добро пожаловать!<span class="close-choose-city">&times;</span></h2>  
+          <p class="sub-title-popup">Выберите свой регион для входа на сайт или просто нажмите на кнопку войти</p>
+        </div>
+        <div class="modal-body">
+          <p>
+            <button class="cityes shymkent-city"><img src="{{ asset('img/icons/choose-city.png') }}" alt="">Шымкент</button>
+            <br>
+            <button class="cityes almaty-city"><img src="{{ asset('img/icons/choose-city.png') }}" alt="">Алматы</button>
+          </p>
+          <button type="" class="btn-popup">Войти<img src="{{ asset('img/icons/sign-in.png') }}" alt=""></span></button>
+          <p class="short-description-popup">Дорогие друзья! Добро пожаловать на сайт оценочной компании ТОО «БИОН Group»</p>
+        </div>
+        <div class="modal-footer">
+          <h3><img src="{{ asset('img/bglogo.png') }}"></h3>
+          <p class="copy-popup">ТОО «БИОН Group», 2019 (Все права защищены.)</p>
+        </div>
+      </div>
+
+    </div>
+<!-- end Popup welcome to site, and choose city -->
 
 <main>
     <!-- Row with slider and request form -->
@@ -265,7 +296,7 @@
     </div> 
     <!-- End map -->
     <!-- Licence block -->
-    <div class="partners licences">
+    <div class="licences">
         <h3 class="title hideOnMob"><span>Лицензии</span></span></h3>
             <div class="licWrap">
                 
@@ -331,17 +362,18 @@
 @include('frontend.partials.vue_templates')
 
 
-<script src="/js/vendor/jquery-3.3.1.min.js"></script>
-<script src="/js/vendor/popper.min.js"></script>
-<script src="/js/vendor/bootstrap.min.js"></script>
-<script src="/js/vendor/slick.min.js"></script>
-<script src="/js/vendor/vue.js"></script>
-<script src="/js/vendor/jquery.spincrement.min.js"></script>
-<script src="/js/vendor/lightbox.min.js"></script>
-<script src="/js/templates.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPpn49wLx9QuMcbiPuieWAZWRYBPRWZiE&callback=initMap"
-async defer></script>
-<script src="/js/app.js"></script>
+    <script src="/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="/js/vendor/popper.min.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/vendor/slick.min.js"></script>
+    <script src="/js/vendor/vue.js"></script>
+    <script src="/js/vendor/jquery.spincrement.min.js"></script>
+    <script src="/js/vendor/lightbox.min.js"></script>
+    <script src="/js/templates.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPpn49wLx9QuMcbiPuieWAZWRYBPRWZiE&callback=initMap"
+    async defer></script>
+    <script src="/js/app.js"></script>
+    <script src="{{ asset('js/arman.js') }}"></script>
 
 </body>
 
