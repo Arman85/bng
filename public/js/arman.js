@@ -12,7 +12,7 @@ $(document).ready( function() {
 
 	setTimeout( function(){
 		$(modalChooseCity).fadeIn();
-	}, 2000);
+	}, 1000);
 
 	// When the user clicks on <span> (x), close the modal 
 	$(btnChooseCity).click( function(){
