@@ -130,7 +130,7 @@
             </div>
         <!-- Services menu Services menu и форма "Что вас интересует" end -->
         <!-- Slider -->
-        <div class="col-lg-9 col-12 slider carousel slide" data-ride="carousel"  id="mainCarousel">
+        <div class="col-lg-12 col-12 slider carousel slide" data-ride="carousel"  id="mainCarousel">
             <div class="carousel-inner">
                 {!! $mainSlider !!}
             <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
@@ -143,79 +143,6 @@
             </a>
         </div>
         <!-- End of slider -->
-    
-        <!-- ReQUEST form -->
-        <div class="col-lg-3">
-            <div class="rf">
-
-                <!-- First window -->
-                <div class="recall" v-show="showFirstWindow">
-                    <p class="title">Перезвонить вам?</p>
-                    <p class="subtitle">Выберите удобное себе время для консультации с нашими операторами или оставьте сообщение и мы обязательно перезвонят Вам!</p>
-                    <p class="subtitle">Заказав услугу "Обратный звонок" Вы получите: консультации специалиста, выезд на объект и анализ документов бесплатно!</p>
-                    <button class="r-btn" @click="hideFirstWindow()">Заказать!</button>
-                </div>
-                <!-- End of window -->
-
-                <!-- Window that appears when click on free message -->
-                <div class="sendMessage" v-show="showMsgWindow">
-                    <p class="title">Отправьте <br>нам сообщение</p>
-                    <hr>
-                    <p class="subtitle">И получите пакет услуг бесплатно: консультации специалиста, выезд на объект и анализ документов</p>
-                    <form name="message">
-                        <input type="text"  id="mesname" name="name" placeholder="Имя" class="form-control">
-                        <input type="text"  id="mesphone" name="phone" placeholder="Телефон" class="form-control">
-                        <select name="city" class="form-control" id="mescity" >
-                            <option value="Шымкент" selected>Шымкент</option>
-                            <option value="Алматы">Алматы</option>
-                        </select>
-                        <textarea name="text" class="form-control" id="mestext" ></textarea>
-                        <input type="submit" id="sendMessageFromPage" value="Отправить" class="form-control">
-                        {{ csrf_field() }}
-                    </form>
-                    <p class="garanty">Гарантируем конфиденциальность и соблюдение коммерческой тайны</p>
-                    <button class="form-control" @click="changeWindow()">Заказать бесплатную консультацию</button>
-                </div>
-                <!-- End of  window -->
-
-                <!-- Window that appears when click on free callback -->
-                <div class="sendMessage2" v-show="showRecallWindow">
-                    <p class="title">Закажите <br>бесплатную консультацию</p>
-                    <hr>
-                    <p class="subtitle">И получите пакет услуг бесплатно: консультации специалиста, выезд на объект и анализ документов</p>
-                    <form name="cons2">
-                        <input type="text" name="name"  id="cname2" placeholder="Имя" class="form-control" required>
-                        <input type="text" name="phone" id="cphone2" placeholder="Телефон" class="form-control" required>
-                        <select name="city" id="ccity2" class="form-control">
-                            <option value="Шымкент" selected>Шымкент</option>
-                            <option value="Алматы">Алматы</option>
-                        </select>
-                        <select name="when" id="cwhen2" class="form-control" required>
-                            <option value="" selected>Когда вам позвонить?</option>
-                            <option value="До обеда">До обеда</option>
-                            <option value="После обеда">После обеда</option>
-                            <option value="Завтра">Завтра</option>
-                            <option value="В течение недели">В течение недели</option>
-                        </select>
-                        <select name="interest" class="form-control" id="cint">
-                            <option value="" selected>Что вас интересует?</option>
-                            <option value="Дом">Дом</option>
-                            <option value="Машина">Машина</option>
-                        </select>
-                        <select name="lang" id="clang2" class="form-control">
-                            <option value="" selected>Выберите язык (необяз.)</option>
-                            <option value="Русский">Русский</option>
-                            <option value="Казахский">Казахский</option>
-                        </select>
-                        {{ csrf_field() }}
-                        <input type="submit" id="sendConsButton2" value="Отправить" class="form-control">
-                    </form>
-                    <p class="garanty">Гарантируем конфиденциальность и соблюдение коммерческой тайны</p>
-                    <button class="form-control" @click="changeWindow()">Отправьте нам сообщение с сайта</button>
-                </div>
-                <!-- End of window -->
-            </div>
-        </div>
     </div>
     <!-- End of row -->
     <!-- How do we work block -->
