@@ -14,15 +14,10 @@ $(document).ready( function() {
 		$(modalChooseCity).fadeIn();
 	}, 2000);
 
-	//When the user clicks on the button, open the modal 
+	// When the user clicks on <span> (x), close the modal 
 	$(btnChooseCity).click( function(){
 		$(modalChooseCity).fadeOut();
 	});
-
-	// When the user clicks on <span> (x), close the modal
-	spanChooseCity.onclick = function() {
-		modalChooseCity.style.display = "none";
-	}
 
 	// When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
