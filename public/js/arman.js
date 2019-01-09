@@ -48,9 +48,9 @@ $(document).ready( function() {
 	}
 
 	// When the user clicks on <span> (x), close the modal
-	spanCallOrder.onclick = function() {
-		modalCallOrder.style.display = "none";
-	}
+	$(spanCallOrder).click( function (){
+		$(modalCallOrder).fadeOut();
+	});
 
 	//When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
@@ -76,9 +76,9 @@ $(document).ready( function() {
 	});
 
 	// When the user clicks on <span> (x), close the modal
-	spanServiceOrder.onclick = function() {
-		modalServiceOrder.style.display = "none";
-	}
+	$(spanServiceOrder).click( function (){
+		$(modalServiceOrder).fadeOut();
+	});
 
 	//When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {

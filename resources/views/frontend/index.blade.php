@@ -44,7 +44,7 @@
       <!-- Modal content -->
         <div class="modal-content-choose-city">
             <div class="modal-header">
-              <h2 class="title-popup">Добро пожаловать!<span class="close-choose-city">&times;</span></h2>  
+              <h2 class="title-popup">Добро пожаловать!<!-- <span class="close-choose-city">&times;</span> --></h2>  
               <p class="sub-title-popup">Выберите свой регион для входа на сайт или просто нажмите на кнопку войти</p>
             </div>
             <div class="modal-body">
