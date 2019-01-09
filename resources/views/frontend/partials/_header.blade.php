@@ -66,7 +66,8 @@
                     </div>
                     <div class="col-lg-2 col-md-3">
                         <div class="btn-box">
-                            <button class="showOrderBox specialButton">Заказать звонок</button>
+                            <!-- <button class="showOrderBox specialButton" id="myBtn-call-order">Заказать звонок</button> -->
+                            <button class="" id="myBtn-call-order">Заказать звонок</button>
                             <a href="">Написать на WhatsApp</a>
                         </div>
                     </div>

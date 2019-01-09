@@ -39,31 +39,96 @@
     <!-- Trigger/Open The Modal -->
     <!-- <button id="myBtn">Open Modal</button> -->
 
-    <!-- The Modal -->
+    <!-- The Modal choose city -->
     <div id="myModal-choose-city" class="modal-choose-city">
-
       <!-- Modal content -->
-      <div class="modal-content-choose-city">
-        <div class="modal-header">
-          <h2 class="title-popup">Добро пожаловать!<span class="close-choose-city">&times;</span></h2>  
-          <p class="sub-title-popup">Выберите свой регион для входа на сайт или просто нажмите на кнопку войти</p>
+        <div class="modal-content-choose-city">
+            <div class="modal-header">
+              <h2 class="title-popup">Добро пожаловать!<span class="close-choose-city">&times;</span></h2>  
+              <p class="sub-title-popup">Выберите свой регион для входа на сайт или просто нажмите на кнопку войти</p>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <button class="cityes shymkent-city"><img src="{{ asset('img/icons/choose-city.png') }}" alt="">Шымкент</button>
+                    <br>
+                    <button class="cityes almaty-city"><img src="{{ asset('img/icons/choose-city.png') }}" alt="">Алматы</button>
+                </p>
+                <button type="" class="btn-popup btn-choose-city">Войти<img src="{{ asset('img/icons/sign-in.png') }}" alt=""></span></button>
+                <p class="short-description-popup">Дорогие друзья! Добро пожаловать на сайт оценочной компании ТОО «БИОН Group»</p>
+            </div>
+            <div class="modal-footer">
+                <h3><img src="{{ asset('img/bglogo.png') }}"></h3>
+                <p class="copy-popup">ТОО «БИОН Group», 2019 (Все права защищены.)</p>
+            </div>
         </div>
-        <div class="modal-body">
-          <p>
-            <button class="cityes shymkent-city"><img src="{{ asset('img/icons/choose-city.png') }}" alt="">Шымкент</button>
-            <br>
-            <button class="cityes almaty-city"><img src="{{ asset('img/icons/choose-city.png') }}" alt="">Алматы</button>
-          </p>
-          <button type="" class="btn-popup">Войти<img src="{{ asset('img/icons/sign-in.png') }}" alt=""></span></button>
-          <p class="short-description-popup">Дорогие друзья! Добро пожаловать на сайт оценочной компании ТОО «БИОН Group»</p>
-        </div>
-        <div class="modal-footer">
-          <h3><img src="{{ asset('img/bglogo.png') }}"></h3>
-          <p class="copy-popup">ТОО «БИОН Group», 2019 (Все права защищены.)</p>
-        </div>
-      </div>
-
     </div>
+    
+    <!-- The Modal call order -->
+    <div id="myModal-call-order" class="modal-call-order">
+      <!-- Modal content -->
+        <div class="modal-content-call-order">
+            <form action="" method="" name="" class="">
+                <div class="modal-header">
+                  <h2 class="title-popup">Заказать звонок<span class="close-call-order">&times;</span></h2>
+                </div>
+                <div class="modal-body">
+                    <p class="no-margin">
+                        <input type="text" name="name" class="call-order-input" placeholder="Ваше имя">
+                        <br>
+                        <input type="text" name="number" class="call-order-input" placeholder="+7(ХХХ) ХХХ ХХ ХХ">
+                        <br>
+                        <p class="city-select">
+                            <select>
+                                <option value="city">Шымкент</option>
+                                <option value="city" selected>Алматы</option>
+                            </select>
+                        </p>
+                        
+                    </p>
+                    <button type="submit" class="btn-popup">Заказать<img src="{{ asset('img/icons/send-button.svg') }}" alt=""></button>
+                    <p class="short-description-popup">Наши менеджеры свяжутся с Вами в ближайшее время! Мы работаем с 09:00 до 18:00 с Пн-Пт.</p>
+                </div>    
+            </form>
+            <div class="modal-footer">
+                <h3><img src="{{ asset('img/bglogo.png') }}"></h3>
+                <p class="copy-popup">ТОО «БИОН Group», 2019 (Все права защищены.)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal service order -->
+    <div id="myModal-service-order" class="modal-service-order">
+      <!-- Modal content -->
+        <div class="modal-content-service-order">
+            <div class="modal-header">
+              <h2 class="title-popup">Заказ услуги<span class="close-service-order">&times;</span></h2>  
+              <p class="sub-title-popup serv-title">Оценка недвижимости</p>
+            </div>
+            <div class="modal-body">
+                <p class="no-margin">
+                    <input type="text" name="name" class="call-order-input" placeholder="Ваше имя">
+                    <br>
+                    <input type="text" name="number" class="call-order-input" placeholder="+7(ХХХ) ХХХ ХХ ХХ">
+                    <br>
+                    <input type="text" name="short-description" placeholder="Место оценки, город, район, село(коротко)" class="call-order-input">
+                    <br>
+                    <p class="city-select">
+                        <select>
+                            <option value="city">Шымкент</option>
+                            <option value="city" selected>Алматы</option>
+                        </select>
+                    </p>
+                </p>
+                <button type="" class="btn-popup">Заказать<img src="{{ asset('img/icons/send-button.svg') }}" alt=""></span></button>
+                <p class="short-description-popup">Наши менеджеры свяжутся с Вами в ближайшее время! Мы работаем с 09:00 до 18:00 с Пн-Пт.</p>
+            </div>
+            <div class="modal-footer">
+                <h3><img src="{{ asset('img/bglogo.png') }}"></h3>
+                <p class="copy-popup">ТОО «БИОН Group», 2019 (Все права защищены.)</p>
+            </div>
+        </div>
+    </div>
+
 <!-- end Popup welcome to site, and choose city -->
 
 <main>
