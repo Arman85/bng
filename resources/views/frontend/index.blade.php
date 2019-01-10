@@ -100,10 +100,12 @@
     <div id="myModal-service-order" class="modal-service-order">
       <!-- Modal content -->
         <div class="modal-content-service-order">
-            <form action="" name="" method="POST">
+            <form action="/send-mail-service" name="" method="POST">
+                {{ csrf_field() }}
                 <div class="modal-header">
                   <h2 class="title-popup">Заказ услуги<span class="close-service-order">&times;</span></h2>  
                   <p class="sub-title-popup serv-title"></p>
+                  <input type="hidden" name="serviceName" value="" class="current-serv-name">
                 </div>
                 <div class="modal-body">
                     <p class="no-margin">
@@ -111,10 +113,10 @@
                         <br>
                         <input type="text" name="number" class="call-order-input" placeholder="+7(ХХХ) ХХХ ХХ ХХ">
                         <br>
-                        <input type="text" name="short-description" placeholder="Место оценки, город, район, село(коротко)" class="call-order-input">
+                        <input type="text" name="shortDescription" placeholder="Место оценки, город, район, село(коротко)" class="call-order-input">
                         <br>
                         <p class="city-select">
-                            <select>
+                            <select name="cityService">
                                 <option value="city">Шымкент</option>
                                 <option value="city" selected>Алматы</option>
                             </select>
@@ -182,7 +184,7 @@
                             <input type="text" name="your-number" placeholder="+7 (ХХХ) ХХХ ХХ ХХ">
                             <input type="text" name="your-short-description" placeholder="Место оценки, город, район, село(коротко)">
                             <input type="hidden" name="" value="" id="current-serv">
-                            <input type="hidden" name="" value="" id="current-serv-name">
+                            <input type="hidden" name="" value="" class="current-serv-name">
                             <button type="submit" class="btn-what-interested">Заказать <img src="{{ asset('img/icons/send-button.svg') }}"></button> 
                         </form>
                     </div>

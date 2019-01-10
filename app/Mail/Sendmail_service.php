@@ -18,8 +18,11 @@ class Sendmail_service extends Mailable
      */
     public function __construct($data)
     {
-        $this->service = $data['service'];
-        $this->phone = $data['phone'];
+        $this->serviceName = $data['service-name'];
+        $this->name = $data['name'];
+        $this->number = $data['number'];
+        $this->shortDescription = $data['short-description'];
+        $this->city = $data['city'];
     }
 
     /**
@@ -32,8 +35,12 @@ class Sendmail_service extends Mailable
 
         return $this->from(env('MAIL_FROM'))
                     ->with([
-                        'service' => $this->service,
-                        'phone' => $this->phone
+                        'serviceName' => $this->serviceName,
+                        'name' => $this->name,
+                        'number' => $this->number,
+                        'short-description' => $this->shortDescription,
+                        'city' => $this->city
+
                     ])
                     ->subject('Выбор услуги')
                     ->view('mail.sendmail_service');

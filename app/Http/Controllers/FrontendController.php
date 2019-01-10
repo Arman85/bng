@@ -98,9 +98,15 @@ class FrontendController extends Controller
     public function mail_service(Request $request)
     {
         $data = [
-            'service' => $request->service,
-            'phone' => $request->phone
+            'service-name' => $request->serviceName,
+            'name' => $request->name,
+            'number' => $request->number,
+            'short-description' => $request->shortDescription,
+            'city' => $request->cityService,
+
         ];
+
+        //dd($data);
 
         Mail::to(env('MAIL_TO'))->send(new Sendmail_service($data));
         return redirect('/');

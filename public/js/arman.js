@@ -78,7 +78,7 @@ $(document).ready( function() {
 	  var activeService = $(this).find('img').attr('class');
 	  var currentServiceName = $(this).find('img').attr('title');
 	  $('#current-serv').val(activeService);
-	  $('#current-serv-name').val(currentServiceName);
+	  $('.current-serv-name').val(currentServiceName);
 	  //alert(currentServiceName);
 	  /*sound();*/
 	});
@@ -98,10 +98,11 @@ $(document).ready( function() {
 	//When the user clicks on the button, open the modal 
 	btnServiceOrder.click( function(e){
 		e.preventDefault();
-		var currentServiceName = $('#current-serv-name').val();
+		var currentServiceName = $('.current-serv-name').val();
 		//alert(currentServiceName);
 		if ( currentServiceName ) {
 			$('.serv-title').html(currentServiceName);
+			$('input.current-serv-name').val(currentServiceName);
 			$(modalServiceOrder).show();
 		}
 		else alert('Выберите вид услуги');
