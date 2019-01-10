@@ -1,6 +1,17 @@
 $(document).ready( function() {
 	
-	// Choose city
+/*==========================
+ Common scripts
+
+ 1. Modal Choose city
+ 2. Modal Call order 
+ 3. Modal service order
+ 4. Choose service
+============================*/	
+
+/*===========================
+	1. Choose city
+=============================*/
 	// Get the modal
 	var modalChooseCity = document.getElementById('myModal-choose-city');
 
@@ -27,7 +38,9 @@ $(document).ready( function() {
 		}else alert(modalChooseCity);
 	}
 
-	// Call order
+/*===========================
+	2. Call order
+=============================*/
 	// Get the modal
 	var modalCallOrder = document.getElementById('myModal-call-order');
 
@@ -54,7 +67,9 @@ $(document).ready( function() {
 		}
 	}
 
-	// Service order
+/*===========================
+	2. Call order
+=============================*/
 	// Get the modal
 	var modalServiceOrder = document.getElementById('myModal-service-order');
 
@@ -81,5 +96,16 @@ $(document).ready( function() {
 			modalServiceOrder.style.display = "none";
 		}
 	}
+
+	/* ===========================
+  4. Choose service 
+  ==========================*/
+  $('.myserv').click(function() {
+  	//$('.myserv').removeClass('Act');
+	  $('.myserv img').removeClass('BLUE'); /*У остальных элементов с классами myserv в которых есть тег img удаляем у img класс BLUE*/
+	  $(this).find('img').addClass('BLUE'); /*А текущему по которому кликнули с классам myserv, в нутри него находим тег img и добавляем ему класс BLUE*/
+	  servId = $(this).data('id');
+	  /*sound();*/
+	});
 
 });
