@@ -457,12 +457,12 @@ text-align: right;
 	
 }
 .serv {
-	width: 19%;
+	/*width: 19%;
 	display: block;
 	padding: 15px 15px;
 	margin: 0 0.5%;
 	border: 1px solid #000;
-	margin-bottom: 3%;
+	margin-bottom: 3%;*/
 	transition: 0.3s background ease;
 }
 .serv svg {
@@ -485,7 +485,7 @@ text-align: right;
 }
 
 .serv:active {
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	border-radius: 3px;
 }
 .serv.Act {

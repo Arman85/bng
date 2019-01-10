@@ -845,8 +845,8 @@ $('.closeMenu').click(function() {
 $('.serv').click(function() {
   $('.goServ').addClass('orangeChoose');
   $('.serv').removeClass('Act');
-  $('.serv').removeClass('ORANGE');
-  $(this).addClass('ORANGE');
+  $('.serv img').removeClass('BLUE'); //У остальных элементов с классами serv удаляем класс BLUE
+  $(this).find('img').addClass('BLUE'); //А текущему по которому кликнули с классам serv добавляем класс BLUE
 
   servId = $(this).data('id');
   /*sound();*/

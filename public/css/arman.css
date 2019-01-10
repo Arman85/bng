@@ -118,8 +118,8 @@ ul.logos-list {
 }
 
 .service-icons li {
-	width: 10%;
-	margin-right: 10%;
+	width: 14%;
+	margin-right: 6%;
 	text-align: center;
 	line-height: 18px;
 }
@@ -139,7 +139,23 @@ ul.logos-list {
 }
 
 .service-icons li a img {
+	border-radius: 5px;
 	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.GREY {
+	border: 1px solid #e4e4e4;
+	box-shadow: 2px 2px 5px #e4e4e4, -2px -2px 5px #e4e4e4;
+}
+
+.BLUE {
+	background: #00A1EF;
+	border: 1px solid #e4e4e4;
+	box-shadow: 2px 2px 5px #00A1EF, -2px -2px 5px #00A1EF;
+	transition: .5s;
+	/*padding: 12px;*/
+	/*font-size: .80rem;*/
 }
 
 .what-interested {
@@ -756,4 +772,14 @@ div.modal-header {
 	/*div.about {
 		background: url(../img/about.jpg) no-repeat center -550px;
 	}*/
+}
+
+@media (max-width: 1440px) {
+	.btn-what-interested {
+		margin-top: 25px;
+	}
+
+	.form-what-interested {
+		text-align: right;
+	}
 }
