@@ -502,13 +502,14 @@ $("#sendmail_service").click(function(e){
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
-        url: '/send-mail-service',
+        url: '/send-mail-service', //Путь который прописан в файле web (route)
         method: 'POST',
         data: {
             service: sservice,
             phone: sphone
         },
         success: function() {
+            alert(sservice);
             $('.sent').fadeIn();
             $('.sentMob').fadeIn();
         }
@@ -639,7 +640,7 @@ var service = {
   "n2": {
     "svg" : "<img src='/img/services/2.svg'>",
       "title": "Оценка транспорта",
-      "text": "56o",
+      "text": "56oArman",
   },
   "n3": {
     "svg" : "<img src='/img/services/3.svg'>",
@@ -677,15 +678,15 @@ var service = {
       "text": "5ko",
   }
 }
-var servId = 1; 
+var servId = 1; //Устанавливаем начальный id.
 $('.goServ').click(function() {
  
   $('.order').fadeOut();
   $('.service').fadeIn();
-
-  $('span.svg').html(service["n"+servId].svg);
+  //alert(service["smm"+servId].svg);
+  $('span.svg').html(service["n"+servId].svg); /* Здесь вставляем в элемент span с классом svg,  html эелемнт img и путь к файлу svg. service это json массив далее в квадратных скобках обращаюсь к имени ячейки которая называется "n", в самом массиве их 10, и далее как бы циклом пробежится по всему массиву и далее через знак + указываем счечик который начинается с 1, и указываем имя свойства svg, в котором указан путь к файлу изображения. */
   $('span.afterSvg').html(service["n"+servId].title);
-  $('#chosen').val(service["n"+servId].title);
+  $('#chosen').val(service["n"+servId].title);/*Здесь передаем в форму в тег инпут в его value имя выбранного сервиса, что бы в последующем передать его в отправку на емайл*/
   $('div.mtxt').html(service["n"+servId].text);
 
 
@@ -845,8 +846,8 @@ $('.closeMenu').click(function() {
 $('.serv').click(function() {
   $('.goServ').addClass('orangeChoose');
   $('.serv').removeClass('Act');
-  $('.serv img').removeClass('BLUE'); //У остальных элементов с классами serv удаляем класс BLUE
-  $(this).find('img').addClass('BLUE'); //А текущему по которому кликнули с классам serv добавляем класс BLUE
+  $('.serv').removeClass('ORANGE'); //У остальных элементов с классами serv удаляем класс BLUE
+  $(this).addClass('ORANGE'); //А текущему по которому кликнули с классам serv добавляем класс BLUE
 
   servId = $(this).data('id');
   /*sound();*/

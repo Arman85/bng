@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', 'FrontendController@index');
+// Frontend area
 
+Route::get('/{id?}', 'FrontendController@index');
 
+// Admin area
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -60,3 +62,5 @@ Route::post('/send-mail-messages', 'FrontendController@mail_message');
 Route::post('/send-mail-consul', 'FrontendController@mail_cons');
 Route::post('/send-mail-req', 'FrontendController@mail_req');
 Route::post('/send-mail-testi', 'FrontendController@mail_testi');
+
+Route::resource('services', 'ServiceController');

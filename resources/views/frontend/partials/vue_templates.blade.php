@@ -30,7 +30,7 @@
                 {!! $vacancies !!}
 </template>
 <template id="actionsTab">
-             {!! $services !!}
+            {{-- {!! $services !!} --}}
 </template>
 
 

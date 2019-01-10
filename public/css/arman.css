@@ -103,6 +103,8 @@ ul.logos-list {
 .services-menu-wrapper {
 	width: 100%;
 	height: auto;
+	display: flex;
+	justify-content: center;
 	/*padding: 25px;*/
 }
 
@@ -757,6 +759,7 @@ div.modal-header {
 
 .serv-title {
 	text-transform: uppercase;
+	margin-top: 1rem;
 }
 
 /*The Modal service order end*/

@@ -67,8 +67,24 @@ $(document).ready( function() {
 		}
 	}
 
-/*===========================
-	2. Call order
+	/* ===========================
+  3. Choose service 
+  ==========================*/
+  $('.myserv').click(function() {
+  	//$('.myserv').removeClass('Act');
+	  $('.myserv img').removeClass('BLUE'); /*У остальных элементов с классами myserv в которых есть тег img удаляем у img класс BLUE*/
+	  $(this).find('img').addClass('BLUE'); /*А текущему по которому кликнули с классам myserv, в нутри него находим тег img и добавляем ему класс BLUE*/
+	  servId = $(this).data('id');
+	  var activeService = $(this).find('img').attr('class');
+	  var currentServiceName = $(this).find('img').attr('title');
+	  $('#current-serv').val(activeService);
+	  $('#current-serv-name').val(currentServiceName);
+	  //alert(currentServiceName);
+	  /*sound();*/
+	});
+
+	/*===========================
+	4. Service order
 =============================*/
 	// Get the modal
 	var modalServiceOrder = document.getElementById('myModal-service-order');
@@ -82,7 +98,13 @@ $(document).ready( function() {
 	//When the user clicks on the button, open the modal 
 	btnServiceOrder.click( function(e){
 		e.preventDefault();
-		$(modalServiceOrder).show();
+		var currentServiceName = $('#current-serv-name').val();
+		//alert(currentServiceName);
+		if ( currentServiceName ) {
+			$('.serv-title').html(currentServiceName);
+			$(modalServiceOrder).show();
+		}
+		else alert('Выберите вид услуги');
 	});
 
 	// When the user clicks on <span> (x), close the modal
@@ -96,16 +118,5 @@ $(document).ready( function() {
 			modalServiceOrder.style.display = "none";
 		}
 	}
-
-	/* ===========================
-  4. Choose service 
-  ==========================*/
-  $('.myserv').click(function() {
-  	//$('.myserv').removeClass('Act');
-	  $('.myserv img').removeClass('BLUE'); /*У остальных элементов с классами myserv в которых есть тег img удаляем у img класс BLUE*/
-	  $(this).find('img').addClass('BLUE'); /*А текущему по которому кликнули с классам myserv, в нутри него находим тег img и добавляем ему класс BLUE*/
-	  servId = $(this).data('id');
-	  /*sound();*/
-	});
 
 });

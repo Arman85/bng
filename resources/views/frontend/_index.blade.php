@@ -139,33 +139,33 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <ul class="service-icons">
-                            <li>
+                            <li class="myserv">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/1.svg') }}" alt="Оценка недвижимости">
+                                    <img src="{{ asset('img/services/1.svg') }}" alt="Оценка недвижимости" class="GREY">
                                     ОЦЕНКА НЕДВИЖИМОСТИ
                                 </a>
                             </li>
-                            <li>
+                            <li class="myserv">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/2.svg') }}" alt="Оценка транспорта">
+                                    <img src="{{ asset('img/services/2.svg') }}" alt="Оценка транспорта" class="GREY">
                                     ОЦЕНКА ТРАНСПОРТА
                                 </a>
                             </li>
-                            <li>
+                            <li class="myserv">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/3.svg') }}" alt="Оценка оборудования">
+                                    <img src="{{ asset('img/services/3.svg') }}" alt="Оценка оборудования" class="GREY">
                                     ОЦЕНКА ОБОРУДОВАНИЯ
                                 </a>
                             </li>
-                            <li>
+                            <li class="myserv">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/4.svg') }}" alt="">
+                                    <img src="{{ asset('img/services/4.svg') }}" alt="" class="GREY">
                                     ОЦЕНКА БИЗНЕСА
                                 </a>
                             </li>
-                            <li class="icon-last">
+                            <li class="myserv icon-last">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/5.svg') }}" alt="">
+                                    <img src="{{ asset('img/services/5.svg') }}" alt="" class="GREY">
                                     ОЦЕНКА ИНТЕЛЛЕКТУАЛЬНОЙ СОБСТВЕННОСТИ
                                 </a>
                             </li>
@@ -173,33 +173,33 @@
                     </div>
                     <div class="col-lg-6">
                         <ul class="service-icons">
-                            <li>
+                            <li class="myserv">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/6.svg') }}" alt="">
+                                    <img src="{{ asset('img/services/6.svg') }}" alt="" class="GREY">
                                     ОЦЕНКА ДЛЯ МСФО
                                 </a>
                             </li>
-                            <li>
+                            <li class="myserv">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/7.svg') }}" alt="">
+                                    <img src="{{ asset('img/services/7.svg') }}" alt="" class="GREY">
                                     ОЦЕНКА ДЛЯ КРЕДИТОВАНИЯ
                                 </a>
                             </li>
-                            <li>
+                            <li class="myserv">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/8.svg') }}" alt="">
+                                    <img src="{{ asset('img/services/8.svg') }}" alt="" class="GREY">
                                     ЮРИДИЧЕСКИЕ И НОТАРИАЛ. УСЛУГИ
                                 </a>
                             </li>
-                            <li>
+                            <li class="myserv">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/9.svg') }}" alt="">
+                                    <img src="{{ asset('img/services/9.svg') }}" alt="" class="GREY">
                                     РЕГИСТ. И КОНСУЛЬТ. В ГОС.ЗАКУПКАХ
                                 </a>
                             </li>
-                            <li class="icon-last">
+                            <li class="myserv icon-last">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/10_calculator.svg') }}" alt="">
+                                    <img src="{{ asset('img/services/10_calculator.svg') }}" alt="" class="GREY">
                                     ДРУГОЙ ВИД ОЦЕНКИ
                                 </a>
                             </li>
@@ -424,7 +424,7 @@
 
 
 
-@include('frontend.partials.vue_templates')
+{{-- @include('frontend.partials.vue_templates')--}}
 
 
     <script src="/js/vendor/jquery-3.3.1.min.js"></script>

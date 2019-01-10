@@ -100,28 +100,30 @@
     <div id="myModal-service-order" class="modal-service-order">
       <!-- Modal content -->
         <div class="modal-content-service-order">
-            <div class="modal-header">
-              <h2 class="title-popup">Заказ услуги<span class="close-service-order">&times;</span></h2>  
-              <p class="sub-title-popup serv-title">Оценка недвижимости</p>
-            </div>
-            <div class="modal-body">
-                <p class="no-margin">
-                    <input type="text" name="name" class="call-order-input" placeholder="Ваше имя">
-                    <br>
-                    <input type="text" name="number" class="call-order-input" placeholder="+7(ХХХ) ХХХ ХХ ХХ">
-                    <br>
-                    <input type="text" name="short-description" placeholder="Место оценки, город, район, село(коротко)" class="call-order-input">
-                    <br>
-                    <p class="city-select">
-                        <select>
-                            <option value="city">Шымкент</option>
-                            <option value="city" selected>Алматы</option>
-                        </select>
+            <form action="" name="" method="POST">
+                <div class="modal-header">
+                  <h2 class="title-popup">Заказ услуги<span class="close-service-order">&times;</span></h2>  
+                  <p class="sub-title-popup serv-title"></p>
+                </div>
+                <div class="modal-body">
+                    <p class="no-margin">
+                        <input type="text" name="name" class="call-order-input" placeholder="Ваше имя">
+                        <br>
+                        <input type="text" name="number" class="call-order-input" placeholder="+7(ХХХ) ХХХ ХХ ХХ">
+                        <br>
+                        <input type="text" name="short-description" placeholder="Место оценки, город, район, село(коротко)" class="call-order-input">
+                        <br>
+                        <p class="city-select">
+                            <select>
+                                <option value="city">Шымкент</option>
+                                <option value="city" selected>Алматы</option>
+                            </select>
+                        </p>
                     </p>
-                </p>
-                <button type="" class="btn-popup">Заказать<img src="{{ asset('img/icons/send-button.svg') }}" alt=""></span></button>
-                <p class="short-description-popup">Наши менеджеры свяжутся с Вами в ближайшее время! Мы работаем с 09:00 до 18:00 с Пн-Пт.</p>
-            </div>
+                    <button type="" class="btn-popup">Заказать<img src="{{ asset('img/icons/send-button.svg') }}" alt=""></span></button>
+                    <p class="short-description-popup">Наши менеджеры свяжутся с Вами в ближайшее время! Мы работаем с 09:00 до 18:00 с Пн-Пт.</p>
+                </div>
+            </form>
             <div class="modal-footer">
                 <h3><img src="{{ asset('img/bglogo.png') }}"></h3>
                 <p class="copy-popup">ТОО «БИОН Group», 2019 (Все права защищены.)</p>
@@ -139,70 +141,30 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <ul class="service-icons">
+                        @foreach ( $myservices as $myservice )
+                        @if ( $loop->index <= 4 )
                             <li class="myserv">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/1.svg') }}" alt="Оценка недвижимости" class="GREY">
-                                    ОЦЕНКА НЕДВИЖИМОСТИ
+                                    <img src="img/services/{{ $myservice->img }}" alt="{{ $myservice->title }}" class="GREY" title="{{ $myservice->title }}" data-id="{{ $myservice->id }}">
+                                    {{ $myservice->title }}
                                 </a>
                             </li>
-                            <li class="myserv">
-                                <a href="#">
-                                    <img src="{{ asset('img/services/2.svg') }}" alt="Оценка транспорта" class="GREY">
-                                    ОЦЕНКА ТРАНСПОРТА
-                                </a>
-                            </li>
-                            <li class="myserv">
-                                <a href="#">
-                                    <img src="{{ asset('img/services/3.svg') }}" alt="Оценка оборудования" class="GREY">
-                                    ОЦЕНКА ОБОРУДОВАНИЯ
-                                </a>
-                            </li>
-                            <li class="myserv">
-                                <a href="#">
-                                    <img src="{{ asset('img/services/4.svg') }}" alt="" class="GREY">
-                                    ОЦЕНКА БИЗНЕСА
-                                </a>
-                            </li>
-                            <li class="myserv icon-last">
-                                <a href="#">
-                                    <img src="{{ asset('img/services/5.svg') }}" alt="" class="GREY">
-                                    ОЦЕНКА ИНТЕЛЛЕКТУАЛЬНОЙ СОБСТВЕННОСТИ
-                                </a>
-                            </li>
+                        @endif
+                        @endforeach
                         </ul>
                     </div>
                     <div class="col-lg-6">
                         <ul class="service-icons">
+                        @foreach ( $myservices as $myservice )  
+                        @if ( $loop->index > 4 )  
                             <li class="myserv">
                                 <a href="#">
-                                    <img src="{{ asset('img/services/6.svg') }}" alt="" class="GREY">
-                                    ОЦЕНКА ДЛЯ МСФО
+                                    <img src="img/services/{{ $myservice->img }}" alt="{{ $myservice->title }}" class="GREY" title="{{ $myservice->title }}">
+                                    {{ $myservice->title }}
                                 </a>
                             </li>
-                            <li class="myserv">
-                                <a href="#">
-                                    <img src="{{ asset('img/services/7.svg') }}" alt="" class="GREY">
-                                    ОЦЕНКА ДЛЯ КРЕДИТОВАНИЯ
-                                </a>
-                            </li>
-                            <li class="myserv">
-                                <a href="#">
-                                    <img src="{{ asset('img/services/8.svg') }}" alt="" class="GREY">
-                                    ЮРИДИЧЕСКИЕ И НОТАРИАЛ. УСЛУГИ
-                                </a>
-                            </li>
-                            <li class="myserv">
-                                <a href="#">
-                                    <img src="{{ asset('img/services/9.svg') }}" alt="" class="GREY">
-                                    РЕГИСТ. И КОНСУЛЬТ. В ГОС.ЗАКУПКАХ
-                                </a>
-                            </li>
-                            <li class="myserv icon-last">
-                                <a href="#">
-                                    <img src="{{ asset('img/services/10_calculator.svg') }}" alt="" class="GREY">
-                                    ДРУГОЙ ВИД ОЦЕНКИ
-                                </a>
-                            </li>
+                        @endif
+                        @endforeach
                         </ul>
                     </div>
                 </div>  
@@ -219,6 +181,8 @@
                             <input type="text" name="your-name" placeholder="Ваше имя">
                             <input type="text" name="your-number" placeholder="+7 (ХХХ) ХХХ ХХ ХХ">
                             <input type="text" name="your-short-description" placeholder="Место оценки, город, район, село(коротко)">
+                            <input type="hidden" name="" value="" id="current-serv">
+                            <input type="hidden" name="" value="" id="current-serv-name">
                             <button type="submit" class="btn-what-interested">Заказать <img src="{{ asset('img/icons/send-button.svg') }}"></button> 
                         </form>
                     </div>
@@ -424,7 +388,7 @@
 
 
 
-@include('frontend.partials.vue_templates')
+{{-- @include('frontend.partials.vue_templates')--}}
 
 
     <script src="/js/vendor/jquery-3.3.1.min.js"></script>

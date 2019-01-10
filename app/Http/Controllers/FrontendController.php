@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Message;
 use App\Models\Textblock;
+use App\Models\Service;
 use Mail;
 use App\Mail\Sendmail;
 use App\Mail\Sendmail_service;
@@ -17,7 +18,7 @@ use App\Mail\Sendmail_testi;
 
 class FrontendController extends Controller
 {
-    public function index() {
+    public function index( Request $request, $id="" ) {
         $mainSlider = Textblock::where('id', 1)->first()->text;
         $howToPay = Textblock::where('id', 2)->first()->text;
         $services = Textblock::where('id', 3)->first()->text;
@@ -36,6 +37,11 @@ class FrontendController extends Controller
         $quiz = Textblock::where('id', 16)->first()->text;
         $footer = Textblock::where('id', 17)->first()->text;
         $popup_phone = Textblock::where('id', 18)->first()->text;
+
+        // Arman
+        $myservices = Service::get();
+        $myservice = Service::where('id', $id)->first();
+        //dd($myservice);
 
     	return view('frontend.index')->with([
             'mainSlider' => $mainSlider,
@@ -56,7 +62,9 @@ class FrontendController extends Controller
             'testi' => $testi,
             'quiz' => $quiz,
             'footer' => $footer,
-    		'popup_phone' => $popup_phone
+    		'popup_phone' => $popup_phone,
+            'myservices' => $myservices,
+            'myservice' => $myservice
     	]);
     }
 
