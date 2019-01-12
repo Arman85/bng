@@ -42,18 +42,20 @@
     <!-- The Modal choose city -->
     <div id="myModal-choose-city" class="modal-choose-city">
       <!-- Modal content -->
-        <div class="modal-content-choose-city">
+        <div class="modal-content-choose-city" id="modal-content-choose-city-id">
             <div class="modal-header">
               <h2 class="title-popup">Добро пожаловать!<!-- <span class="close-choose-city">&times;</span> --></h2>  
               <p class="sub-title-popup">Выберите свой регион для входа на сайт или просто нажмите на кнопку войти</p>
             </div>
             <div class="modal-body">
-                <p>
-                    <button class="cityes shymkent-city"><img src="{{ asset('img/icons/choose-city.png') }}" alt="">Шымкент</button>
-                    <br>
-                    <button class="cityes almaty-city"><img src="{{ asset('img/icons/choose-city.png') }}" alt="">Алматы</button>
-                </p>
-                <button type="" class="btn-popup btn-choose-city">Войти<img src="{{ asset('img/icons/sign-in.png') }}" alt=""></span></button>
+                <div class="btns-listener">
+                    <p>
+                        <button class="cityes shymkent-city"><img src="{{ asset('img/icons/choose-city.png') }}" alt="">Шымкент</button>
+                        <br>
+                        <button class="cityes almaty-city"><img src="{{ asset('img/icons/choose-city.png') }}" alt="">Алматы</button>
+                    </p>
+                    <button type="" class="btn-popup btn-choose-city">Войти<img src="{{ asset('img/icons/sign-in.png') }}" alt=""></span></button>
+                </div>
                 <p class="short-description-popup">Дорогие друзья! Добро пожаловать на сайт оценочной компании ТОО «БИОН Group»</p>
             </div>
             <div class="modal-footer">
@@ -67,25 +69,25 @@
     <div id="myModal-call-order" class="modal-call-order">
       <!-- Modal content -->
         <div class="modal-content-call-order">
-            <form action="" method="" name="" class="">
+            <form action="" method="" name="call-order-form" class="">
                 <div class="modal-header">
                   <h2 class="title-popup">Заказать звонок<span class="close-call-order">&times;</span></h2>
                 </div>
                 <div class="modal-body">
                     <p class="no-margin">
-                        <input type="text" name="name" class="call-order-input" placeholder="Ваше имя">
+                        <input type="text" name="name" class="call-order-input" placeholder="Ваше имя" id="call-name">
                         <br>
-                        <input type="text" name="number" class="call-order-input" placeholder="+7(ХХХ) ХХХ ХХ ХХ">
+                        <input type="text" name="number" class="call-order-input" placeholder="+7(ХХХ) ХХХ ХХ ХХ" id="call-phone">
                         <br>
                         <p class="city-select">
-                            <select>
+                            <select id="call-order-city">
                                 <option value="city">Шымкент</option>
                                 <option value="city" selected>Алматы</option>
                             </select>
                         </p>
                         
                     </p>
-                    <button type="submit" class="btn-popup">Заказать<img src="{{ asset('img/icons/send-button.svg') }}" alt=""></button>
+                    <button type="submit" class="btn-popup" id="call-order-btn">Заказать<img src="{{ asset('img/icons/send-button.svg') }}" alt=""></button>
                     <p class="short-description-popup">Наши менеджеры свяжутся с Вами в ближайшее время! Мы работаем с 09:00 до 18:00 с Пн-Пт.</p>
                 </div>    
             </form>
@@ -100,7 +102,7 @@
     <div id="myModal-service-order" class="modal-service-order">
       <!-- Modal content -->
         <div class="modal-content-service-order">
-            <form action="/send-mail-service" name="" method="POST">
+            <form action="/send-mail-service" name="service-order-form" method="POST">
                 {{ csrf_field() }}
                 <div class="modal-header">
                   <h2 class="title-popup">Заказ услуги<span class="close-service-order">&times;</span></h2>  
@@ -109,20 +111,20 @@
                 </div>
                 <div class="modal-body">
                     <p class="no-margin">
-                        <input type="text" name="name" class="call-order-input" placeholder="Ваше имя">
+                        <input type="text" name="name" class="call-order-input" placeholder="Ваше имя" id="serv-client-name">
                         <br>
-                        <input type="text" name="number" class="call-order-input" placeholder="+7(ХХХ) ХХХ ХХ ХХ">
+                        <input type="text" name="number" class="call-order-input" placeholder="+7(ХХХ) ХХХ ХХ ХХ" id="serv-client-phone">
                         <br>
-                        <input type="text" name="shortDescription" placeholder="Место оценки, город, район, село(коротко)" class="call-order-input">
+                        <input type="text" name="shortDescription" placeholder="Место оценки, город, район, село(коротко)" class="call-order-input" id="serv-client-desc">
                         <br>
                         <p class="city-select">
-                            <select name="cityService">
-                                <option value="city">Шымкент</option>
-                                <option value="city" selected>Алматы</option>
+                            <select name="cityService" id="city-service-order">
+                                <option value="Шымкент" selected>Шымкент</option>
+                                <option value="Алматы">Алматы</option>
                             </select>
                         </p>
                     </p>
-                    <button type="" class="btn-popup">Заказать<img src="{{ asset('img/icons/send-button.svg') }}" alt=""></span></button>
+                    <button type="" class="btn-popup" id="service-order">Заказать<img src="{{ asset('img/icons/send-button.svg') }}" alt=""></span></button>
                     <p class="short-description-popup">Наши менеджеры свяжутся с Вами в ближайшее время! Мы работаем с 09:00 до 18:00 с Пн-Пт.</p>
                 </div>
             </form>
@@ -394,6 +396,8 @@
 
 
     <script src="/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="{{ asset('js/jquery.cookie.js') }}"></script>
+    <script src="{{ asset('js/jquery.mask.min.js') }}"></script>
     <script src="/js/vendor/popper.min.js"></script>
     <script src="/js/vendor/bootstrap.min.js"></script>
     <script src="/js/vendor/slick.min.js"></script>
@@ -405,7 +409,7 @@
     async defer></script>
     <script src="/js/app.js"></script>
     <script src="{{ asset('js/arman.js') }}"></script>
-
+    <script src="{{ asset('js/jquery.sweet-modal.min.js') }}"></script>
 </body>
 
 </html>

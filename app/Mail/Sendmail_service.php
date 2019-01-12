@@ -38,7 +38,7 @@ class Sendmail_service extends Mailable
                         'serviceName' => $this->serviceName,
                         'name' => $this->name,
                         'number' => $this->number,
-                        'short-description' => $this->shortDescription,
+                        'shortDescription' => $this->shortDescription,
                         'city' => $this->city
 
                     ])
