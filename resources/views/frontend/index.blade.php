@@ -69,7 +69,8 @@
     <div id="myModal-call-order" class="modal-call-order">
       <!-- Modal content -->
         <div class="modal-content-call-order">
-            <form action="" method="" name="call-order-form" class="">
+            <form action="/send-mail-messages" method="POST" name="call-order-form" class="">
+                {{ csrf_field() }}
                 <div class="modal-header">
                   <h2 class="title-popup">Заказать звонок<span class="close-call-order">&times;</span></h2>
                 </div>
@@ -80,9 +81,9 @@
                         <input type="text" name="number" class="call-order-input" placeholder="+7(ХХХ) ХХХ ХХ ХХ" id="call-phone">
                         <br>
                         <p class="city-select">
-                            <select id="call-order-city">
-                                <option value="city">Шымкент</option>
-                                <option value="city" selected>Алматы</option>
+                            <select id="call-order-city" name="cityCallOrder">
+                                <option value="Шымкент" selected>Шымкент</option>
+                                <option value="Алматы">Алматы</option>
                             </select>
                         </p>
                         

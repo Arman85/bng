@@ -141,10 +141,11 @@ class FrontendController extends Controller
     {
         $data = [
             'name' => $request->name,
-            'text' => $request->text,
-            'phone' => $request->phone,
-            'city' => $request->city
+            'number' => $request->number,
+            'city' => $request->cityCallOrder
         ];
+
+        //dd($data);
 
         Mail::to(env('MAIL_TO'))->send(new Sendmail_message($data));
         return redirect('/');

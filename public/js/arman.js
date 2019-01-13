@@ -223,8 +223,8 @@ function validateFormCallOrder() {
 
 		var name = $("#call-name").val();
 		var number = $("#call-phone").val();
-		var city = $("#call-order-city option:selected").val();
-
+		var cityCallOrder = $("#call-order-city option:selected").val();
+		//alert(cityCallOrder);
 		$.ajax({
 			headers: {
 				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -234,7 +234,7 @@ function validateFormCallOrder() {
 			data: {
 				name: name,
 				number: number,
-				city: city
+				cityCallOrder: cityCallOrder
 			},
 			success: function(data){
 				$.sweetModal({

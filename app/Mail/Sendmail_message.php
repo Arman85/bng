@@ -32,9 +32,8 @@ class Sendmail_message extends Mailable
         return $this->from(env('MAIL_FROM'))
                     ->with([
                         'name' => $this->data['name'],
-                        'phone' => $this->data['phone'],
+                        'number' => $this->data['number'],
                         'city' => $this->data['city'],
-                        'text' => $this->data['text']
                     ])
                     ->subject('Сообщение с сайта *')
                     ->view('mail.sendmail_message');
