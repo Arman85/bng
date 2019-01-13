@@ -449,8 +449,12 @@ $("#sendConsButton").click(function(e){
             city: ccity
         },
         success: function() {
-            $('.sent').fadeIn();
-            $('.sentMob').fadeIn();
+          $.sweetModal({
+            content: 'Заявка на консультацию успешно отправлена.',
+            icon: $.sweetModal.ICON_SUCCESS
+          });
+            // $('.sent').fadeIn();
+            // $('.sentMob').fadeIn();
         }
     });
     e.preventDefault();
