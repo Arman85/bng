@@ -130,6 +130,7 @@ ul.logos-list {
 	margin-right: 0;
 }
 
+
 .service-icons li a {
 	text-transform: uppercase;
 	text-decoration: none;
@@ -786,3 +787,15 @@ div.modal-header {
 		text-align: right;
 	}
 }
+
+@media (max-width: 1366px) {
+	ul.service-icons2 li:nth-last-child(1){
+		margin-right: 0;
+		
+	}
+	ul.service-icons1 li:nth-last-child(1){
+		margin-right: 0;
+		
+	}
+}
+

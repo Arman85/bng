@@ -141,35 +141,36 @@
 <main>
     <!-- Row with slider and request form -->
     <div class="row mob">
-        <!-- Services menu и форма "Что вас интересует"-->
+        <div class="container-fluid responsive-container">
+            <!-- Services menu и форма "Что вас интересует"-->
             <div class="services-menu-wrapper">
                 <div class="row">
                     <div class="col-lg-6">
-                        <ul class="service-icons">
-                        @foreach ( $myservices as $myservice )
-                        @if ( $loop->index <= 4 )
+                        <ul class="service-icons service-icons1">
+                            @foreach ( $myservices as $myservice )
+                            @if ( $loop->index <= 4 )
                             <li class="myserv">
                                 <a href="#">
                                     <img src="img/services/{{ $myservice->img }}" alt="{{ $myservice->title }}" class="GREY" title="{{ $myservice->title }}" data-id="{{ $myservice->id }}">
                                     {{ $myservice->title }}
                                 </a>
                             </li>
-                        @endif
-                        @endforeach
+                            @endif
+                            @endforeach
                         </ul>
                     </div>
                     <div class="col-lg-6">
-                        <ul class="service-icons">
-                        @foreach ( $myservices as $myservice )  
-                        @if ( $loop->index > 4 )  
+                        <ul class="service-icons service-icons2">
+                            @foreach ( $myservices as $myservice )  
+                            @if ( $loop->index > 4 )  
                             <li class="myserv">
                                 <a href="#">
                                     <img src="img/services/{{ $myservice->img }}" alt="{{ $myservice->title }}" class="GREY" title="{{ $myservice->title }}">
                                     {{ $myservice->title }}
                                 </a>
                             </li>
-                        @endif
-                        @endforeach
+                            @endif
+                            @endforeach
                         </ul>
                     </div>
                 </div>  
@@ -193,7 +194,8 @@
                     </div>
                 </div>
             </div>
-        <!-- Services menu Services menu и форма "Что вас интересует" end -->
+            <!-- Services menu Services menu и форма "Что вас интересует" end -->
+        </div>
         <!-- Slider -->
         <div class="col-lg-12 col-12 slider carousel slide" data-ride="carousel"  id="mainCarousel">
             <div class="carousel-inner">
