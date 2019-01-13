@@ -35,7 +35,7 @@ class Sendmail_message extends Mailable
                         'number' => $this->data['number'],
                         'city' => $this->data['city'],
                     ])
-                    ->subject('Сообщение с сайта *')
+                    ->subject('Заказ звонка *')
                     ->view('mail.sendmail_message');
                 
                 
