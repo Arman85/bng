@@ -944,6 +944,14 @@ div.modal-header {
 	div.mobile-menu p.text {
 		fon-size: 1em;
 	}
+
+	div.order hr {
+		position: initial;
+	}
+
+	div.order p.text {
+		position: initial;
+	}
 }
 
 @media (max-width: 575.98px) {
