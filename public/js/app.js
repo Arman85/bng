@@ -126,6 +126,8 @@ $(window).scroll(function() {
         $('main').css('padding-top','60px');
         $('.chooseCity').css('top','60px');
         $('.show-logo').css('visibility', 'visible');
+        $('.mymenu').css('display','block');
+        $('.mobileSwitch').css('display', 'none');
 
         $('.order').css('top','60px');
         $('.mobile-menu').css('top','60px');
@@ -150,6 +152,9 @@ $(window).scroll(function() {
         $('main').css('padding-top','0px');
         $('.chooseCity').css('top','90px');
         $('.show-logo').css('visibility', 'hidden');
+        $('.mymenu').css('display','none');
+        var size = $(window).width();
+        if( size < 991.98 ) $('.mobileSwitch').css('display', 'inline-block');
 
         $('.order').css('top','90px');
         $('.mobile-menu').css('top','90px');
@@ -758,6 +763,44 @@ var callCenterClosed = false;
         $('#logo2').hide();
         $('#loop2').show();
         $('#tel2').show();
+        $('.nav').show();
+        $('.mobile-menu').fadeOut();
+        $('.order').fadeOut();
+        $('.service').fadeOut();
+        $('.message').fadeOut();
+        $('.choose-map').fadeOut();
+        $('.map-2gis').fadeOut();
+        $('.map-google').fadeOut();
+        $('.map-yandex').fadeOut();
+        $('#js-menuName').text('');
+        $('.phoneMore').hide();
+        $(this).removeClass('open');
+        allClosed = true;
+        /*sound();*/
+        $('.search').hide();
+        if(callCenterClosed == true) {
+          $('.bion-select').show();
+        }
+      }
+
+    });
+
+    $('#mobile-nav-icon3').click(function() {
+      //alert("hello");
+      if(allClosed == true) {
+        allClosed = false;
+        $('#nav-icon3').addClass('open');
+        $('#loop2').hide();
+        $('#tel2').hide();
+        /*sound();*/
+        $('.search').show();
+        $('#js-menuName').text('');
+        $('.mobile-menu').fadeIn();
+      } else {
+        $('#logo1').show();
+        $('#logo2').hide();
+        $('#loop2').show();
+        //$('#tel2').show();
         $('.nav').show();
         $('.mobile-menu').fadeOut();
         $('.order').fadeOut();

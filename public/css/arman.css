@@ -765,6 +765,66 @@ div.modal-header {
 
 /*The Modal service order end*/
 
+/*Hamburger*/
+.mobileSwitch {
+		display: none;
+	}
+
+	#mobile-nav-icon3 {
+		width: 30px;
+    height: 22.5px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    float: right;
+    margin-top: 4px;
+    margin-right: 25px;
+    margin-left: -2px;
+	}
+
+	#mobile-nav-icon3 span {
+		display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    border-radius: 4.5px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+	}
+
+	#mobile-nav-icon3 span:nth-child(1) {
+    top: 0px;
+	}
+
+	#mobile-nav-icon3 span:nth-child(2), #mobile-nav-icon3 span:nth-child(3) {
+    top: 9px;
+	}
+
+	#mobile-nav-icon3 span:nth-child(4) {
+    top: 18px;
+}
+
+.mymobileSwitch {
+	display: none;
+}
+/*End hamburger*/
+
 /*Responsive*/
 @media (min-width: 1550px) {
 	.btn-box {
@@ -796,6 +856,58 @@ div.modal-header {
 	ul.service-icons1 li:nth-last-child(1){
 		margin-right: 0;
 		
+	}
+}
+
+@media (max-width: 991.98px) {
+	.mobileSwitch {
+		display: block;
+	}
+
+	.services-menu-wrapper {
+		display: none;
+	}
+
+	.mymobileSwitch {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.header-container {
+		margin: 0;
+	}
+
+	.logo-title1 {
+		font-size: 1.5rem;
+		top: -33px;
+	}
+
+	.logo-title2 {
+		top: -10px;
+	}
+
+	ul.logos-list {
+		padding-top: 0;
+	}
+	div#tel2 {
+		display: none;
+	}
+
+	.mymenu {
+		display: none;
+	}
+
+	#nav-icon3 {
+		margin-right: 25px;
+	}
+
+	.show-logo img {
+		width: 30%;
+	}
+
+	#mobile-nav-icon3 {
+		margin-right: 25px;
 	}
 }
 

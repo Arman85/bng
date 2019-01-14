@@ -66,7 +66,7 @@
                     </div>
                     <div class="col-lg-2 col-md-3">
                         <div class="btn-box">
-                            <button class="showOrderBox specialButton" id="">Заказать звонок</button>
+                            <!-- <button class="showOrderBox specialButton" id="">Заказать звонок</button> -->
                             <button class="" id="myBtn-call-order">Заказать звонок</button>
                             <a href="">Написать на WhatsApp</a>
                         </div>
@@ -84,6 +84,14 @@
                 <img src="{{ asset('img/bglogo.png') }}" alt="Biongroup">
                 <span>Оценочная компания</span> 
             </a>
+            <!-- Hamburger mobile -->
+            <div id="nav-icon3" class='mymobileSwitch'>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          <!-- End of Hamburger mobile -->
         </div>
         <!-- end logo -->
         <!-- Search bar -->
@@ -108,9 +116,9 @@
         </div>
         <!-- End of Mobile phone buttons -->
         <!-- Mobile buttons -->
-        <div id="tel2" class='mobileSwitch'>
+        <!-- <div id="tel2" class='mobileSwitch'>
             <img src="/img/common/mobile/tel.png">
-        </div>
+        </div> -->
 
         <!-- End of Mobile buttons -->
 
@@ -139,5 +147,13 @@
     <!-- Sub Menu -->
 
     <!-- End Sub Menu -->
+    <!-- Hamburger -->
+        <div id="mobile-nav-icon3" class='mobileSwitch'>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    <!-- End of Hamburger -->
     
 </header>
