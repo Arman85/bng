@@ -68,7 +68,7 @@
                         <div class="btn-box">
                             <!-- <button class="showOrderBox specialButton" id="">Заказать звонок</button> -->
                             <button class="" id="myBtn-call-order">Заказать звонок</button>
-                            <a href="">Написать на WhatsApp</a>
+                            <a href="https://api.whatsapp.com/send?phone=77077400825" id="watsApp" target="_blank" title="Ответим на WhatsApp">Написать на WhatsApp</a>
                         </div>
                     </div>
                 </div>

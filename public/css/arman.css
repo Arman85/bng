@@ -621,11 +621,24 @@ div.modal-header {
 #myBtn-call-order {
 	  background: #E1EFFB;
     border: 0;
-    margin: 15px 15px 0;
+    margin: 15px 15px 15px;
     padding: 0 25px;
     color: #000;
     text-transform: uppercase;
     height: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #999;
+    border-radius: 3px;
+    outline: 0;
+}
+
+#watsApp {
+	  background: #0DC143;
+    border: 0;
+    padding: 5px 9px;
+    color: #000;
+    text-transform: uppercase;
+    /*height: 30px;*/
     cursor: pointer;
     box-shadow: 0 0 5px #999;
     border-radius: 3px;
