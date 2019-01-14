@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="/css/vendor/lightbox.min.css">
     <meta name="theme-color" content="#008cd0">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <!-- 2gis include -->
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <!-- 2gis init -->
+    <script type="text/javascript">
+        var mapTwoGis;
+        DG.then(function () {
+            mapTwoGis = DG.map('map-2gis', {
+                center: [42.317472, 69.585637],
+                zoom: 17
+            });
+            DG.marker([42.317472, 69.585637]).addTo(mapTwoGis).bindPopup('ТОО Biongroup');
+        });
+    </script>
 </head>
 <body>
 <!-- CLick sounds -->
@@ -329,6 +342,9 @@
 
       <span class="hideMap2gis">Назад</span>   
       <iframe frameborder="no" style=" box-sizing: border-box;" class="mapHeight" src="http://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A42.317444%2C%22lon%22%3A69.585614%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22shymkent%22%7D%2C%22org%22%3A%2270000001025819458%22%7D"></iframe>
+    </div>
+    <div class="mobile-map-2gis">
+        <div id="map-2gis"></div>     
     </div> 
     <!-- End map -->
     <!-- Licence block -->
