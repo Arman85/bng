@@ -123,7 +123,7 @@ $(window).scroll(function() {
     if($(window).scrollTop() > 30) {
         $('.menu').css('position','fixed');
         $('.submenu div').css('top','0px');
-        $('main').css('padding-top','60px');
+        //$('main').css('padding-top','60px');
         $('.chooseCity').css('top','60px');
         $('.show-logo').css('visibility', 'visible');
         $('.mymenu').css('display','block');

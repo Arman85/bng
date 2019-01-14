@@ -871,6 +871,26 @@ div.modal-header {
 	.mymobileSwitch {
 		display: inline-block;
 	}
+
+	.what-interested {
+		padding: 10px;
+	}
+
+	.what-interested div {
+		display: none;
+	}
+
+	div.mob {
+		display: block;
+	}
+
+	.experience h3 {
+		padding: 0 10px;
+	}
+
+	div.slider {
+		min-height: 200px;
+	}
 }
 
 @media (max-width: 575.98px) {
