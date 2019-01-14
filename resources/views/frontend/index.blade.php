@@ -288,6 +288,59 @@
         </div>
     </div>
     <!-- End of About -->
+    <!-- Licence block -->
+    <div class="licences">
+        <h3 class="title hideOnMob"><span>Лицензии</span></span></h3>
+            <div class="licWrap">
+                
+                <!-- slider -->
+                <h3 class="title hideOnDesk"><span>Квалификационные <br> свидетельства</span></h3>
+                <div class="lic-slider">
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid001.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid001.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid002.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid002.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid003.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid003.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid004.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid004.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid005.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid005.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid006.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid006.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid007.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid007.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid008.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid008.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid009.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid009.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid010.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid010.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid011.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid011.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid012.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid012.jpg') }}" class="lic"></a>
+                    </div>
+                    <div>
+                        <a href="{{ asset('img/lic/big/1/kvalsvid013.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid013.jpg') }}" class="lic"></a>
+                    </div>
+
+                </div>
+                <!-- End of slider -->
+            </div>            
+    </div>
+    <!-- End of Licence block -->
     <!-- Наши отчеты принимают -->
     <div class="our-reports-accept">
 
@@ -347,59 +400,6 @@
         <div id="map-2gis"></div>     
     </div> 
     <!-- End map -->
-    <!-- Licence block -->
-    <div class="licences">
-        <h3 class="title hideOnMob"><span>Лицензии</span></span></h3>
-            <div class="licWrap">
-                
-                <!-- slider -->
-                <h3 class="title hideOnDesk"><span>Квалификационные <br> свидетельства</span></h3>
-                <div class="lic-slider">
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid001.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid001.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid002.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid002.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid003.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid003.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid004.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid004.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid005.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid005.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid006.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid006.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid007.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid007.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid008.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid008.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid009.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid009.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid010.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid010.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid011.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid011.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid012.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid012.jpg') }}" class="lic"></a>
-                    </div>
-                    <div>
-                        <a href="{{ asset('img/lic/big/1/kvalsvid013.jpg') }}" data-lightbox="road"><img src="{{ asset('img/lic/small/1/kvalsvid013.jpg') }}" class="lic"></a>
-                    </div>
-
-                </div>
-                <!-- End of slider -->
-            </div>            
-    </div>
-    <!-- End of Licence block -->
 </main>
 
 <footer>

@@ -952,6 +952,14 @@ div.modal-header {
 	div.order p.text {
 		position: initial;
 	}
+
+	main div.licences {
+		padding: 0 40px;
+	}
+
+	/*div.exp img {
+		width: 80%;
+	}*/
 }
 
 @media (max-width: 575.98px) {
