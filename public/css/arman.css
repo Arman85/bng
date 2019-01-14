@@ -917,6 +917,28 @@ div.modal-header {
 	div#map {
 		display: block;
 	}
+
+	.our-reports-accept h3,
+	div.licences h3.title {
+		font-size: 1.75em;
+		font-weight: bold;
+	}
+	.waif {
+		background-size: cover;
+	}
+
+	.modal-content-choose-city,
+	.modal-content-call-order {
+		width: 90%;
+	}
+
+	.modal-choose-city {
+		padding-top: 2%;
+	}
+
+	.modal-call-order {
+		padding-top: 5%;
+	}
 }
 
 @media (max-width: 575.98px) {
