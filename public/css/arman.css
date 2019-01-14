@@ -940,6 +940,10 @@ div.modal-header {
 	div.mb2 p.title {
 		font-size: 1.7em;
 	}
+
+	div.mobile-menu p.text {
+		fon-size: 1em;
+	}
 }
 
 @media (max-width: 575.98px) {
