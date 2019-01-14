@@ -9,7 +9,7 @@
             <span class="afterSvg">Оценка недвижимости</span>
         </p>
         <div class="mtxt"></div>
-        <form class="srb" name="serv">
+        <form class="srb" name="serv" action="/send-mail-testi" method="POST">
             <input type="hidden" name="service" value="" id="chosen">
             <input type="text" name="phone" placeholder="Номер телефона" id="sphone">
             <button id="sendmail_service">Заказать услугу</button>

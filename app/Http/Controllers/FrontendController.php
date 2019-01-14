@@ -169,10 +169,11 @@ class FrontendController extends Controller
     public function mail_testi(Request $request)
     {
         $data = [
-            'name' => $request->name,
-            'text' => $request->text,
+            'service' => $request->service,
             'phone' => $request->phone
         ];
+
+        //dd($data);
 
         Mail::to(env('MAIL_TO'))->send(new Sendmail_testi($data));
         return redirect('/');

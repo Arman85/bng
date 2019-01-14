@@ -18,7 +18,8 @@ class Sendmail_testi extends Mailable
      */
     public function __construct($data = [])
     {
-        $this->data = $data;
+        $this->service = $data['service'];
+        $this->phone = $data['phone'];
     }
 
     /**
@@ -28,19 +29,12 @@ class Sendmail_testi extends Mailable
      */
     public function build()
     {
-
         return $this->from(env('MAIL_FROM'))
                     ->with([
-                        'vacancy' => $this->data['vacancy']
+                        'service' => $this->service,
+                        'phone' => $this->phone
                     ])
-                    ->subject('Резюме на вакансию')
-                    ->view('mail.sendmail_vacancy')
-                    ->attach($this->data['document']->getRealPath(),
-                    [
-                        'as' => $this->data['document']->getClientOriginalName(),
-                        'mime' => $this->data['document']->getClientMimeType(),
-                    ]);
-                
-                
+                    ->subject('Выбор услуги')
+                    ->view('mail.sendmail_testi');            
     }
 }

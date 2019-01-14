@@ -525,16 +525,21 @@ $("#sendmail_service").click(function(e){
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
-        url: '/send-mail-service', //Путь который прописан в файле web (route)
+        url: '/send-mail-testi', //Путь который прописан в файле web (route)
         method: 'POST',
         data: {
             service: sservice,
             phone: sphone
         },
         success: function() {
-            alert(sservice);
-            $('.sent').fadeIn();
-            $('.sentMob').fadeIn();
+          $.sweetModal({
+              content: 'Заказ услуги успешно отправлен.',
+              icon: $.sweetModal.ICON_SUCCESS
+            });
+          $('.service').fadeOut();
+            //alert(sservice);
+            // $('.sent').fadeIn();
+            // $('.sentMob').fadeIn();
         }
     });
     e.preventDefault();
@@ -564,8 +569,13 @@ $("#sendmail_message_from_mobile_menu").click(function(e){
             text: mtext
         },
         success: function() {
-            $('.sent').fadeIn();
-            $('.sentMob').fadeIn();
+            // $('.sent').fadeIn();
+            // $('.sentMob').fadeIn();
+            $.sweetModal({
+              content: 'Сообщение успшено отправлено.',
+              icon: $.sweetModal.ICON_SUCCESS
+            });
+            $('.message').fadeOut();
         }
     });
     e.preventDefault();

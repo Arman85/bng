@@ -21,7 +21,7 @@
                 </div>
                 <p class="bot">нажмите здесь чтобы посмотреть список</p>
             </div>
-            <div class="mb4">
+            <!-- <div class="mb4">
                 <div>
                     <img src="/img/tel.svg" alt="" class="_write hideOnDesk">
                     <img src="/img/tel-.svg" alt="" class="_write  hideOnMob">
@@ -29,7 +29,7 @@
         Call center \ Консультация</p>
                 </div>
                 <p class="bot">нажмите здесь чтобы связаться с нами</p>
-            </div>
+            </div> -->
             <div class="mb4 showMessageForm">
                 <div>
                     <img src="/img/mobilemenu/2.svg" alt="" class=" hideOnDesk">

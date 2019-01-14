@@ -932,12 +932,13 @@ div.modal-header {
 		width: 90%;
 	}
 
-	.modal-choose-city {
+	.modal-choose-city,
+	.modal-call-order {
 		padding-top: 2%;
 	}
 
-	.modal-call-order {
-		padding-top: 5%;
+	div.mb2 p.title {
+		font-size: 1.7em;
 	}
 }
 

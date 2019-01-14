@@ -1,6 +1,5 @@
 
-<p><b>Отзыв о компании с сайта: 	</b>	 <br>
-Имя: {{ $name }} <br>
-Телефон: {{ $phone }} <br>
-Текст: {{ $text }}</p>
+<p>Выбор услуги: <strong>{{ $service }}</strong></p>
+<p>Телефон: <strong>{{ $phone }}</strong></p>
+
 

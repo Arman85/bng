@@ -252,5 +252,7 @@ function validateFormCallOrder() {
 	7. Custom code
 =============================*/
  $('input[name="number"]').mask('+7(000)-000-00-00');
+ $('#sphone').mask('+7(000)-000-00-00');
+ $('#mphone').mask('+7(000)-000-00-00');
 
 });
