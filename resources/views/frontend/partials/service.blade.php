@@ -8,7 +8,7 @@
             <span class="svg"></span>
             <span class="afterSvg">Оценка недвижимости</span>
         </p>
-        <div class="mtxt"></div>
+        <!-- <div class="mtxt"></div> -->
         <form class="srb" name="serv" action="/send-mail-testi" method="POST">
             <input type="text" name="name" placeholder="Ваше имя" id="sname">
             <input type="hidden" name="service" value="" id="chosen">

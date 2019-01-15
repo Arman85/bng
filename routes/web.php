@@ -13,7 +13,7 @@
 
 // Frontend area
 
-Route::get('/{id?}', 'FrontendController@index');
+Route::get('/', 'FrontendController@index');
 
 // Admin area
 Auth::routes();

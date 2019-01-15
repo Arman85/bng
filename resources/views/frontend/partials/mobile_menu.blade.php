@@ -1,4 +1,4 @@
-mobile menu -->
+
 <div class="mobile-menu">
     <div class="mb0"></div>
     <div class="mb1">
@@ -75,9 +75,9 @@ mobile menu -->
     
     <div class="last">
         <img src="/img/mobilemenu/5.svg" class="_bion">
-        <p>TOO BION Group 2018 (Все права защищены)</p><!-- 
+        <p>TOO BION Group 2018 (Все права защищены)</p>
+        <!-- 
         <img src="/img/mobilemenu/6.svg" class="_lab hideOnDesk">
         <img src="/img/mobilemenu/6-.svg" class="_lab hideOnMob"> -->
     </div>
 </div>
-<!-- 

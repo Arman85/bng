@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/desktop.css">
     <link rel="stylesheet" href="/css/vendor/lightbox.min.css">
@@ -402,8 +403,90 @@
     <!-- End map -->
 </main>
 
-<footer>
-    {!! $footer !!}
+<footer class="main-foot">
+    {{--{!! $footer !!}--}}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-lg-3">
+                <a href="/" class="logo footer-logo"><img src="{{ asset('img/bglogo.png') }}" alt="Biongroup logo"></a>
+                <p class="footer-about">Оценка любого имущества, активов, бизнеса, убытков, оспаривание кадастровой стоимости, ценных бумаг на всей территории КЗ.</p>
+                <p class="footer-about">ТОО "BIONGROUP" © 2019</p>
+            </div>
+            <div class="col-md-3 col-md-push-7 col-sm-6 col-lg-3">
+                <div class="text-center">
+                    <div class="top-phone">
+                        <span>
+                            <i class="fa fa-phone"></i>
+                             +7 (707)
+                        </span>
+                        <a href="tel:77077400825">740-08-25</a>
+                    </div>
+                    <div class="top-phone">
+                        <span>
+                            <i class="fa fa-phone"></i>
+                             +7 (707)
+                        </span>
+                        <a href="tel:77077400825">740-08-25</a>
+                    </div>
+                    <div class="top-email">
+                        <span>
+                            <i class="fa fa-envelope"></i>
+                              E-Mail:
+                        </span>
+                        <a href="mailto:almatiskakov@gmail.com">almatiskakov@gmail.com</a>
+                    </div>
+                    <div class="top-button">
+                        <button class="btn-call-order-foter">Заказать звонок</button>
+                    </div>
+                    <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
+                    <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
+                    <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
+                    <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
+                    <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
+                    <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-md-pull-3 col-sm-12 col-lg-3">
+                <div class="top-pannel-box">
+                    <h4>Адреса организации:</h4>
+                    <ul>
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                            г. Шымкент, ул. Бейбитшилик 4.
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-pannel-box">
+                    <h4>Время работы:</h4>
+                    <ul>
+                        <li>
+                            <i class="fa fa-clock-o"></i>
+                            пн-пт c 09-00 - 18-00; 
+                            <br>
+                            сб-вс выходной день.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="top-pannel-box">
+                    <h4>Услуги компании:</h4>
+                    <ul class="menu-type-2">
+                        <li><a><span class="fa fa-check"></span>Оценка недвижимости</a></li>
+                        <li><a><span class="fa fa-check"></span>Оценка транспорта</a></li>
+                        <li><a><span class="fa fa-check"></span>Оценка оборудования</a></li>
+                        <li><a><span class="fa fa-check"></span>Оценка бизнеса</a></li>
+                        <li><a><span class="fa fa-check"></span>Оценка интелектуальной собсвенности</a></li>
+                        <li><a><span class="fa fa-check"></span>Оценка для МСФО</a></li>
+                        <li><a><span class="fa fa-check"></span>Оценка для кредитования</a></li>
+                        <li><a><span class="fa fa-check"></span>Юридические и нотариал. услуги</a></li>
+                        <li><a><span class="fa fa-check"></span>Регист. и Консульт. в гос.закупках</a></li>
+                        <li><a><span class="fa fa-check"></span>Другой вид оценки</a></li>        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 

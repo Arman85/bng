@@ -4,7 +4,7 @@ $(document).ready( function() {
  Common scripts
 
  1. Modal Choose city
- 2. Modal Call order 
+ 2. Modal Call order and call order footer
  3. Modal service order
  4. Choose service
  5. Validate forms
@@ -64,6 +64,8 @@ $(document).ready( function() {
 
 	// Get the button that opens the modal
 	var btnCallOrder = document.getElementById("myBtn-call-order");
+	// in footer btn call order
+	var btnCallOrderFooter = $(".btn-call-order-foter");
 
 	// Get the <span> element that closes the modal
 	var spanCallOrder = document.getElementsByClassName("close-call-order")[0];
@@ -72,6 +74,11 @@ $(document).ready( function() {
 	btnCallOrder.onclick = function() {
 		modalCallOrder.style.display = "block";
 	}
+
+	//When the user clicks on the button call order in the footer, open the modal 
+	$(btnCallOrderFooter).click( function(){
+		$(modalCallOrder).fadeIn();
+	});
 
 	// When the user clicks on <span> (x), close the modal
 	$(spanCallOrder).click( function (){

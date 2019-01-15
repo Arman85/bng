@@ -51,12 +51,21 @@ $(document).ready( function() {
       {
         breakpoint: 991.98,
         settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true
         }
-      },
+      }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -134,59 +143,63 @@ $('.clients-slider').slick({
   ==========================*/
 
 $(window).scroll(function() {
-    if($(window).scrollTop() > 30) {
-        //$('.menu').css('position','fixed');
-        $('.submenu div').css('top','0px');
-        //$('main').css('padding-top','60px');
-        $('.chooseCity').css('top','60px');
-        //$('.show-logo').css('visibility', 'visible');
-        //$('.mymenu').css('display','block');
-        $('.mobileSwitch').css('display', 'none');
+    var size = $(window).width();
+    if ( size === 1024) $('div.nav').css('margin-top', '-50px');
+    if( size >= 1024 ) {
+        if($(window).scrollTop() > 30) {
+            $('.mymenu').css('position','fixed');
+            $('.submenu div').css('top','0px');
+            //$('main').css('padding-top','60px');
+            $('.chooseCity').css('top','60px');
+            $('.show-logo').css('visibility', 'visible');
+            $('.mymenu').css('display','block');
+            $('.mobileSwitch').css('display', 'none');
 
-        $('.order').css('top','60px');
-        $('.mobile-menu').css('top','60px');
-        $('.service').css('top','60px');
-        $('.choose-map').css('top','60px');
-        $('.map-2gis').css('top','60px');
-        $('.map-google').css('top','60px');
-        $('.map-yandex').css('top','60px');
-        $('.message').css('top','60px');
+            $('.order').css('top','60px');
+            $('.mobile-menu').css('top','60px');
+            $('.service').css('top','60px');
+            $('.choose-map').css('top','60px');
+            $('.map-2gis').css('top','60px');
+            $('.map-google').css('top','60px');
+            $('.map-yandex').css('top','60px');
+            $('.message').css('top','60px');
 
-        $('.order').css('height','calc(100vh - 60px)');
-        $('.choose-map').css('height','calc(100vh - 60px)');
-        $('.service').css('height','calc(100vh - 60px)');
-        $('.mobile-menu').css('height','calc(100vh - 60px)');
-        $('.map-2gis').css('height','calc(100vh - 60px)');
-        $('.map-yandex').css('height','calc(100vh - 60px)');
-        $('.map-google').css('height','calc(100vh - 60px)');
-        $('.message').css('height','calc(100vh - 60px)');
-    } else {
-        //$('.menu').css('position','static');
-        $('.submenu div').css('top','0px');
-        $('main').css('padding-top','0px');
-        $('.chooseCity').css('top','90px');
-        $('.show-logo').css('visibility', 'hidden');
-        $('.mymenu').css('display','none');
-        //var size = $(window).width();
-        //if( size < 991.98 ) $('.mobileSwitch').css('display', 'inline-block');
+            $('.order').css('height','calc(100vh - 60px)');
+            $('.choose-map').css('height','calc(100vh - 60px)');
+            $('.service').css('height','calc(100vh - 60px)');
+            $('.mobile-menu').css('height','calc(100vh - 60px)');
+            $('.map-2gis').css('height','calc(100vh - 60px)');
+            $('.map-yandex').css('height','calc(100vh - 60px)');
+            $('.map-google').css('height','calc(100vh - 60px)');
+            $('.message').css('height','calc(100vh - 60px)');
+        } else {
+            $('.mymenu').css('position','static');
+            $('.submenu div').css('top','0px');
+            $('main').css('padding-top','0px');
+            $('.chooseCity').css('top','90px');
+            $('.show-logo').css('visibility', 'hidden');
+            //$('.mymenu').css('display','none');
+            //var size = $(window).width();
+            //if( size < 991.98 ) $('.mobileSwitch').css('display', 'inline-block');
 
-        $('.order').css('top','90px');
-        $('.mobile-menu').css('top','90px');
-        $('.service').css('top','90px');
-        $('.choose-map').css('top','90px');
-        $('.map-yandex').css('top','90px');
-        $('.map-google').css('top','90px');
-        $('.map-2gis').css('top','90px');
-        $('.message').css('top','90px');
+            $('.order').css('top','90px');
+            $('.mobile-menu').css('top','90px');
+            $('.service').css('top','90px');
+            $('.choose-map').css('top','90px');
+            $('.map-yandex').css('top','90px');
+            $('.map-google').css('top','90px');
+            $('.map-2gis').css('top','90px');
+            $('.message').css('top','90px');
 
-        $('.order').css('height','calc(100vh - 90px)');
-        $('.choose-map').css('height','calc(100vh - 90px)');
-        $('.service').css('height','calc(100vh - 90px)');
-        $('.mobile-menu').css('height','calc(100vh - 90px)');
-        $('.map-yandex').css('height','calc(100vh - 90px)');
-        $('.map-google').css('height','calc(100vh - 90px)');
-        $('.map-2gis').css('height','calc(100vh - 90px)');
-        $('.message').css('height','calc(100vh - 90px)');
+            $('.order').css('height','calc(100vh - 90px)');
+            $('.choose-map').css('height','calc(100vh - 90px)');
+            $('.service').css('height','calc(100vh - 90px)');
+            $('.mobile-menu').css('height','calc(100vh - 90px)');
+            $('.map-yandex').css('height','calc(100vh - 90px)');
+            $('.map-google').css('height','calc(100vh - 90px)');
+            $('.map-2gis').css('height','calc(100vh - 90px)');
+            $('.message').css('height','calc(100vh - 90px)');
+        }    
     }
 }); 
 

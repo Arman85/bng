@@ -13,7 +13,7 @@
                                     <a href="/" class="logo" title="BIONGROUP">
                                         <!-- <img src="{{ asset('img/logo-footer.png') }}" alt="Biongroup"> -->
                                         <img src="{{ asset('img/bglogo.png') }}" alt="bion" id="logo1">
-                                        <img src="/img/common/mobile/logo-m.png" alt="bion" id="logo2" class="hidelogo">
+                                        <!-- <img src="/img/common/mobile/logo-m.png" alt="bion" id="logo2" class="hidelogo"> -->
                                     </a>
                                 </li>
                                 <li>
@@ -90,20 +90,20 @@
     <!-- Menu -->
     <div class="menu mymenu"  :class="{ sShadow: shadow }">
         <!-- logo  -->
-        {{--<div class="container-bbb">
+        <div class="container-bbb">
             <a class="show-logo">
                 <img src="{{ asset('img/bglogo.png') }}" alt="Biongroup">
                 <span>Оценочная компания</span> 
             </a>
             <!-- Hamburger mobile -->
-            <div id="nav-icon3" class='mymobileSwitch'>
+            {{--<div id="nav-icon3" class='mymobileSwitch'>
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-            </div>
+            </div>--}}
           <!-- End of Hamburger mobile -->
-        </div> --}}
+        </div> 
         <!-- end logo -->
         <!-- Search bar -->
         <div class="search">

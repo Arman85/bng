@@ -19,6 +19,61 @@
 }
 /*Конец списка услуг мобильной версии*/
 
+/*футер*/
+a.footer-logo img {
+	float: initial;
+	height: initial;
+}
+ 
+.top-pannel-box h4 {
+	font-family: Bold;
+	font-size: 1.2rem;
+}
+
+div.top-pannel-box li a {
+	cursor: default;
+}
+
+div.top-pannel-box li a,
+div.text-center,
+footer.main-foot p.footer-about {
+	font-family: Regular;
+	font-size: 1rem;
+}
+
+.btn-call-order-foter {
+	background: #E1EFFB;
+  border: 0;
+  margin: 15px 15px 15px;
+  padding: 5px 25px;
+  color: #000;
+  text-transform: uppercase;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #999;
+  border-radius: 3px;
+  outline: 0;
+}
+
+/*div.top-pannel-box {
+	text-align: center;
+}*/
+
+footer.main-foot .top-pannel-box li .fa {
+	position: initial;
+	margin-right: 10px;
+}
+
+/*p.footer-about {
+	text-align: center;
+}*/
+
+footer.main-foot .top-pannel-box li {
+	text-transform: normal;
+}
+
+/*Конец футер*/
+
 .header-container {
 	margin: 0 24px;
 	max-width: 1920px;
@@ -1022,6 +1077,31 @@ div.modal-header {
 	div.showOrderBox p.top,
 	div.showOrderBox p.bot {
 		padding-right: 53px;
+	}
+
+	.top-pannel-box {
+		text-align: center;
+	}
+
+	div.top-pannel-box li .fa {
+		position: initial;
+	}
+
+	.text-center {
+		margin-bottom: 25px;
+	}
+
+	footer.main-foot p.footer-about {
+		text-align: center;
+	}
+
+	a.footer-logo img {
+		max-width: 100%;
+		width: 70%;
+	}
+
+	footer.main-foot {
+		padding-top: 50px;
 	}
 
 	/*div.exp img {
