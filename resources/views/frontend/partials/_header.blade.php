@@ -6,27 +6,38 @@
             <div class="top-pannel-content">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <!-- Logo -->
-                        <ul class="logos-list">
-                            <li>
-                                <a href="/" class="logo" title="BIONGROUP">
-                                    <!-- <img src="{{ asset('img/logo-footer.png') }}" alt="Biongroup"> -->
-                                    <img src="{{ asset('img/bglogo.png') }}" alt="bion" id="logo1">
-                                    <img src="/img/common/mobile/logo-m.png" alt="bion" id="logo2" class="hidelogo">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/" class="logo-title1">
-                                    Оценочная комания
-                                </a>   
-                                <br>
-                                <a href="/" class="logo-title2">
-                                    Работаем на рынке с 2002 года
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- End logo -->
+                        <div class="mynav-wrapper">
+                            <!-- Logo -->
+                            <ul class="logos-list">
+                                <li>
+                                    <a href="/" class="logo" title="BIONGROUP">
+                                        <!-- <img src="{{ asset('img/logo-footer.png') }}" alt="Biongroup"> -->
+                                        <img src="{{ asset('img/bglogo.png') }}" alt="bion" id="logo1">
+                                        <img src="/img/common/mobile/logo-m.png" alt="bion" id="logo2" class="hidelogo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" class="logo-title1">
+                                        Оценочная комания
+                                    </a>   
+                                    <br>
+                                    <a href="/" class="logo-title2">
+                                        Работаем на рынке с 2002 года
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- End logo -->
+                            <!-- Hamburger mobile -->
+                            <div id="nav-icon3" class='mymobileSwitch'>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <!-- End of Hamburger mobile -->
+                        </div>
                     </div>
+                    <div class="clear" style="margin-bottom: 60px;"></div>
                     <div class="col-md-2 col-lg-offset-1">
                         <div class="top-pannel-box hidden-sm hidden-xs">
                             <h4>Время работы:</h4>
@@ -79,7 +90,7 @@
     <!-- Menu -->
     <div class="menu mymenu"  :class="{ sShadow: shadow }">
         <!-- logo  -->
-        <div class="container-bbb">
+        {{--<div class="container-bbb">
             <a class="show-logo">
                 <img src="{{ asset('img/bglogo.png') }}" alt="Biongroup">
                 <span>Оценочная компания</span> 
@@ -92,7 +103,7 @@
               <span></span>
             </div>
           <!-- End of Hamburger mobile -->
-        </div>
+        </div> --}}
         <!-- end logo -->
         <!-- Search bar -->
         <div class="search">

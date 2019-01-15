@@ -10,8 +10,13 @@
         </p>
         <div class="mtxt"></div>
         <form class="srb" name="serv" action="/send-mail-testi" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя" id="sname">
             <input type="hidden" name="service" value="" id="chosen">
             <input type="text" name="phone" placeholder="Номер телефона" id="sphone">
+            <select name="cityServiceMobile" id="city-service-order-mobile">
+                <option value="Шымкент" selected>Шымкент</option>
+                <option value="Алматы">Алматы</option>
+            </select>
             <button id="sendmail_service">Заказать услугу</button>
             {{ csrf_field() }}
         </form>

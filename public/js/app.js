@@ -135,12 +135,12 @@ $('.clients-slider').slick({
 
 $(window).scroll(function() {
     if($(window).scrollTop() > 30) {
-        $('.menu').css('position','fixed');
+        //$('.menu').css('position','fixed');
         $('.submenu div').css('top','0px');
         //$('main').css('padding-top','60px');
         $('.chooseCity').css('top','60px');
-        $('.show-logo').css('visibility', 'visible');
-        $('.mymenu').css('display','block');
+        //$('.show-logo').css('visibility', 'visible');
+        //$('.mymenu').css('display','block');
         $('.mobileSwitch').css('display', 'none');
 
         $('.order').css('top','60px');
@@ -161,14 +161,14 @@ $(window).scroll(function() {
         $('.map-google').css('height','calc(100vh - 60px)');
         $('.message').css('height','calc(100vh - 60px)');
     } else {
-        $('.menu').css('position','static');
+        //$('.menu').css('position','static');
         $('.submenu div').css('top','0px');
         $('main').css('padding-top','0px');
         $('.chooseCity').css('top','90px');
         $('.show-logo').css('visibility', 'hidden');
         $('.mymenu').css('display','none');
-        var size = $(window).width();
-        if( size < 991.98 ) $('.mobileSwitch').css('display', 'inline-block');
+        //var size = $(window).width();
+        //if( size < 991.98 ) $('.mobileSwitch').css('display', 'inline-block');
 
         $('.order').css('top','90px');
         $('.mobile-menu').css('top','90px');
@@ -520,6 +520,8 @@ $("#sendmail_service").click(function(e){
     }
     var sservice = $('#chosen').val();
     var sphone = $('#sphone').val();
+    var name = $('#sname').val();
+    var cityServiceMobile = $('#city-service-order-mobile option:selected').val();
 
     $.ajax({
         headers: {
@@ -529,9 +531,12 @@ $("#sendmail_service").click(function(e){
         method: 'POST',
         data: {
             service: sservice,
-            phone: sphone
+            phone: sphone,
+            name: name,
+            cityServiceMobile: cityServiceMobile
         },
         success: function() {
+          //console.log(data);
           $.sweetModal({
               content: 'Заказ услуги успешно отправлен.',
               icon: $.sweetModal.ICON_SUCCESS

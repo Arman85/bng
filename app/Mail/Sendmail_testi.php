@@ -20,6 +20,8 @@ class Sendmail_testi extends Mailable
     {
         $this->service = $data['service'];
         $this->phone = $data['phone'];
+        $this->name = $data['name'];
+        $this->city = $data['city'];
     }
 
     /**
@@ -32,7 +34,9 @@ class Sendmail_testi extends Mailable
         return $this->from(env('MAIL_FROM'))
                     ->with([
                         'service' => $this->service,
-                        'phone' => $this->phone
+                        'phone' => $this->phone,
+                        'name' => $this->name,
+                        'city' => $this->city
                     ])
                     ->subject('Выбор услуги')
                     ->view('mail.sendmail_testi');            

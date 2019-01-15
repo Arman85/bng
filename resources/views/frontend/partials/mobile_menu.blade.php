@@ -1,15 +1,15 @@
-<!-- mobile menu -->
+mobile menu -->
 <div class="mobile-menu">
     <div class="mb0"></div>
     <div class="mb1">
         <p>Добро пожаловать</p>
         <span class="closeMenu"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg></span>
     </div>
-    <div class="mb2 showOrderBox hideOnDesk">
+    <!-- <div class="mb2 showOrderBox hideOnDesk">
         <img src="/img/mobilemenu/1.svg">
         <p class="title">Заказать услугу!</p>
         <p class="aftertitle">нажмите здесь <br> чтобы посмотреть список</p>
-    </div>
+    </div> -->
     <div class="mbx">
             
             <div class="mb4 hideOnMob showOrderBox">
@@ -21,6 +21,7 @@
                 </div>
                 <p class="bot">нажмите здесь чтобы посмотреть список</p>
             </div>
+
             <!-- <div class="mb4">
                 <div>
                     <img src="/img/tel.svg" alt="" class="_write hideOnDesk">
@@ -30,6 +31,15 @@
                 </div>
                 <p class="bot">нажмите здесь чтобы связаться с нами</p>
             </div> -->
+            <div class="mb4 showOrderBox hideOnDesk">
+                <div>
+                    <img src="/img/mobilemenu/1.svg" class=" hideOnDesk">
+                    <img src="/img/mobilemenu/1.svg" class=" hideOnMob">
+                    <p class="top">Заказать услугу!</p>
+                </div>
+                <p class="bot">нажмите здесь чтобы посмотреть список</p>
+            </div>
+
             <div class="mb4 showMessageForm">
                 <div>
                     <img src="/img/mobilemenu/2.svg" alt="" class=" hideOnDesk">
@@ -70,4 +80,4 @@
         <img src="/img/mobilemenu/6-.svg" class="_lab hideOnMob"> -->
     </div>
 </div>
-<!--  -->
+<!-- 

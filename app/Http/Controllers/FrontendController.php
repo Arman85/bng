@@ -170,7 +170,9 @@ class FrontendController extends Controller
     {
         $data = [
             'service' => $request->service,
-            'phone' => $request->phone
+            'phone' => $request->phone,
+            'name' => $request->name,
+            'city' => $request->cityServiceMobile
         ];
 
         //dd($data);

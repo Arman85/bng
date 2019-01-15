@@ -1,5 +1,24 @@
 /*Arman css*/
 
+/*Список услуг мобильная версия*/
+#city-service-order-mobile option {
+	color: #00a1ef;
+}
+
+#city-service-order-mobile {
+	display: block;
+  width: 95%;
+  width: calc(100% - 40px);
+  padding: 3px 10px;
+  border: 1px solid #fff;
+  font-size: 1.3em;
+  background: transparent;
+  border-radius: 3px;
+  color: #fff !important;
+  margin: 0 20px 10px;
+}
+/*Конец списка услуг мобильной версии*/
+
 .header-container {
 	margin: 0 24px;
 	max-width: 1920px;
@@ -880,7 +899,7 @@ div.modal-header {
 
 @media (max-width: 991.98px) {
 	.mobileSwitch {
-		display: block;
+		display: none;
 	}
 
 	.services-menu-wrapper {
@@ -970,6 +989,41 @@ div.modal-header {
 		padding: 25px 40px;
 	}
 
+	.mobileSwitch {
+		display: none;
+	}
+
+	.responsive-container {
+		display: none;
+	}
+
+	.mynav-wrapper {
+		position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+    width: 100%;
+    padding: 15px;
+	}
+
+	.top-pannel-box {
+		margin-bottom: 10px;
+	}
+
+	button#myBtn-call-order {
+		margin: 15px 0 0 0;
+	}
+
+	div.showOrderBox {
+		padding-right: 17px;
+	}
+
+	div.showOrderBox p.top,
+	div.showOrderBox p.bot {
+		padding-right: 53px;
+	}
+
 	/*div.exp img {
 		width: 80%;
 	}*/
@@ -980,17 +1034,27 @@ div.modal-header {
 		margin: 0;
 	}
 
+	a.logo {
+		top: 0;
+	}
+
 	.logo-title1 {
-		font-size: 1.5rem;
-		top: -33px;
+		/*font-size: 1.5rem;*/
+		font-size: 1.1rem;
+		font-weight: bold;
+		top: -15px;
 	}
 
 	.logo-title2 {
-		top: -10px;
+		top: 3px;
+		font-size: 0.75rem;
 	}
 
 	ul.logos-list {
 		padding-top: 0;
+		float: left;
+		width: 85%;
+		/*margin-bottom: 25px;*/
 	}
 	div#tel2 {
 		display: none;
@@ -1023,5 +1087,9 @@ div.modal-header {
 		width: 100%;
 		height: 80vh;
 	}
+}
+
+.clear {
+	clear: both;
 }
 
