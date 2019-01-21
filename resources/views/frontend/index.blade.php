@@ -419,10 +419,7 @@
     </div>
     <!-- For mobile version -->
     <div class="mobile-map-2gis">
-        <div id="map-2gis"></div> 
-        <div id="mobile-map-2gis-almaty">
-            
-        </div>    
+        <div id="map-2gis"></div>    
     </div> 
     <!-- End map -->
 </main>
@@ -543,18 +540,14 @@
     <!-- 2gis init -->
     <script type="text/javascript">
         var cookieValueMobile = $.cookie('modalChooseCity');
-        if ( cookieValueMobile  == 'almaty' ){ 
-            alert(cookieValueMobile);
-        }
-        // else {
-        //     var mapTwoGis;
-        //     DG.then(function () {
-        //         mapTwoGis = DG.map('map-2gis', {
-        //             center: [42.317472, 69.585637],
-        //             zoom: 17
-        //         });
-        //         DG.marker([42.317472, 69.585637]).addTo(mapTwoGis).bindPopup('ТОО Biongroup Шымкент'); 
-        // }
+        var mapTwoGis;
+            DG.then(function () {
+                mapTwoGis = DG.map('map-2gis', {
+                    center: [42.317472, 69.585637],
+                    zoom: 17
+                });
+                DG.marker([42.317472, 69.585637]).addTo(mapTwoGis).bindPopup('ТОО Biongroup');
+            });
     </script>
 </body>
 

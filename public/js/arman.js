@@ -39,8 +39,8 @@ $(document).ready( function() {
 		$('.almaty-email').css("display", "inline-block");
 		$('.shymkentMap').css("display", "none");
 		$('iframe.almatyMap').css("display", "block");
-		$('#map-2gis').css("display", "none");
-		$('div#mobile-map-2gis-almaty').css("display", "block");
+		// $('#map-2gis').css("display", "none");
+		// $('div#mobile-map-2gis-almaty').css("display", "block");
 	};
 
 	// Если выбрал Алматы
