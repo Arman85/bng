@@ -1173,3 +1173,29 @@ div.modal-header {
 	clear: both;
 }
 
+/*Almaty city*/
+.top-pannel-box li .fa-whatsapp {
+	top: 22px;
+}
+
+.top-pannel-box li.almaty-contacts,
+.top-pannel-box li.shymkent-contacts {
+	max-width: 100%;
+}
+
+.top-pannel-box li.almaty-contacts {
+	display: none;
+}
+
+.almaty-email {
+	display: none;
+}
+
+.almatyMap {
+	display: none;
+}
+
+/*End almaty city*/
+
+
+

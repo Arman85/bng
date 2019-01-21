@@ -64,3 +64,5 @@ Route::post('/send-mail-req', 'FrontendController@mail_req');
 Route::post('/send-mail-testi', 'FrontendController@mail_testi');
 
 Route::resource('services', 'ServiceController');
+
+Route::resource('sliders', 'SliderController');

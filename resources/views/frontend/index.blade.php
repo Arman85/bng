@@ -12,19 +12,7 @@
     <link rel="stylesheet" href="/css/vendor/lightbox.min.css">
     <meta name="theme-color" content="#008cd0">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <!-- 2gis include -->
-    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-    <!-- 2gis init -->
-    <script type="text/javascript">
-        var mapTwoGis;
-        DG.then(function () {
-            mapTwoGis = DG.map('map-2gis', {
-                center: [42.317472, 69.585637],
-                zoom: 17
-            });
-            DG.marker([42.317472, 69.585637]).addTo(mapTwoGis).bindPopup('ТОО Biongroup');
-        });
-    </script>
+
 </head>
 <body>
 <!-- CLick sounds -->
@@ -211,21 +199,49 @@
             <!-- Services menu Services menu и форма "Что вас интересует" end -->
         </div>
         <!-- Slider -->
+        {{--<div class="col-lg-12 col-12 slider carousel slide" data-ride="carousel"  id="mainCarousel">
+            <div class="carousel-inner">
+                    {!! $mainSlider !!}
+                <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="sr-only">Next</span>
+                </a>
+            </div>
+        <!-- End of slider -->
+        </div>--}}
+    <!-- End of row -->
+    <!-- Slider -->
         <div class="col-lg-12 col-12 slider carousel slide" data-ride="carousel"  id="mainCarousel">
             <div class="carousel-inner">
-                {!! $mainSlider !!}
+                @foreach( $sliders as $slider )
+                <div class="carousel-item @if( $loop->index == 0 ) {{ $active = 'active' }} @endif" style=" background-image: url(img/slider/{{ $slider->img }});
+                @if ( $loop->index == 0 ) background-position: 80% bottom; background-size: 70%; @else background-position: initial initial; background-size: 100%; @endif">
+                    <h3>{{ $slider->title }}</h3>
+                    <p>{{ $slider->description }}</p>
+                </div>
+                @endforeach
+            </div>
+            <ol class="carousel-indicators">
+                @foreach( $sliders as $slider )
+                <li data-target="#mainCarousel" data-slide-to="{{ $loop->index }}" class="{{ ( $loop->index == 0 ? 'active' : '' ) }}"></li>
+                @endforeach
+            </ol>
             <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
         </div>
         <!-- End of slider -->
-    </div>
-    <!-- End of row -->
+    </div>    
+    <!-- End Row with slider and request form -->    
     <!-- How do we work block -->
     <div class="hww">
         <h3>Как мы работаем</h3>
@@ -392,13 +408,21 @@
     </div>
     <!-- End of Leave request block -->
     <!-- Start map -->
+    <!-- Shymkent -->
     <div class="mymap-2gis">
 
       <span class="hideMap2gis">Назад</span>   
-      <iframe frameborder="no" style=" box-sizing: border-box;" class="mapHeight" src="http://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A42.317444%2C%22lon%22%3A69.585614%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22shymkent%22%7D%2C%22org%22%3A%2270000001025819458%22%7D"></iframe>
+      <iframe frameborder="no" style=" box-sizing: border-box;" class="mapHeight shymkentMap" src="http://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A42.317444%2C%22lon%22%3A69.585614%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22shymkent%22%7D%2C%22org%22%3A%2270000001025819458%22%7D"></iframe>
+    
+    <!-- Almaty -->
+      <iframe frameborder="no" style=" box-sizing: border-box;" class="mapHeight almatyMap" src="https://2gis.kz/almaty/query/%D0%B1%D0%B8%D0%BE%D0%BD%20%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B0/firm/9429940000793925?queryState=center%2F76.90052%2C43.234835%2Fzoom%2F18"></iframe>
     </div>
+    <!-- For mobile version -->
     <div class="mobile-map-2gis">
-        <div id="map-2gis"></div>     
+        <div id="map-2gis"></div> 
+        <div id="mobile-map-2gis-almaty">
+            
+        </div>    
     </div> 
     <!-- End map -->
 </main>
@@ -433,7 +457,8 @@
                             <i class="fa fa-envelope"></i>
                               E-Mail:
                         </span>
-                        <a href="mailto:almatiskakov@gmail.com">almatiskakov@gmail.com</a>
+                        <a href="mailto:almatiskakov@gmail.com" class="almaty-email">almaty_bion@mail.ru</a>
+                        <a href="mailto:almatiskakov@gmail.com" class="shymkent-email">almatiskakov@gmail.com</a>
                     </div>
                     <div class="top-button">
                         <button class="btn-call-order-foter">Заказать звонок</button>
@@ -512,6 +537,25 @@
     <script src="/js/app.js"></script>
     <script src="{{ asset('js/arman.js') }}"></script>
     <script src="{{ asset('js/jquery.sweet-modal.min.js') }}"></script>
+
+    <!-- 2gis include -->
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <!-- 2gis init -->
+    <script type="text/javascript">
+        var cookieValueMobile = $.cookie('modalChooseCity');
+        if ( cookieValueMobile  == 'almaty' ){ 
+            alert(cookieValueMobile);
+        }
+        // else {
+        //     var mapTwoGis;
+        //     DG.then(function () {
+        //         mapTwoGis = DG.map('map-2gis', {
+        //             center: [42.317472, 69.585637],
+        //             zoom: 17
+        //         });
+        //         DG.marker([42.317472, 69.585637]).addTo(mapTwoGis).bindPopup('ТОО Biongroup Шымкент'); 
+        // }
+    </script>
 </body>
 
 </html>

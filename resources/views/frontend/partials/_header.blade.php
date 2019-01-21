@@ -53,24 +53,38 @@
                     </div>
                     <div class="col-lg-2 col-md-3">
                         <div class="top-pannel-box hidden-sm hidden-xs">
-                            <h4>Адреса организации:</h4>
+                            <h4>Адрес организации:</h4>
                             <ul>
-                                <li>
+                                <li class="shymkent-contacts">
                                     <i class="fa fa-map-marker"></i>
-                                     БЦ «Водный» г. Москва, Головинское шоссе, д. 5, корп.
+                                     г. Шымкент, ул. Бейбитшилик, 4.
+                                </li>
+                                <li class="almaty-contacts">
+                                    <i class="fa fa-map-marker"></i>
+                                     г. Алматы, ул. Жарокова, 153, офис 54.
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-2">
                         <div class="top-pannel-box hidden-sm hidden-xs">
-                            <h4>Время работы:</h4>
+                            <h4>Контакты:</h4>
                             <ul>
-                                <li>
-                                    <i class="fa fa-clock-o"></i>
-                                     пн-пт c 10-00 - 18-00
-                                     <br>
-                                    сб-вс выходной день.
+                                <li class="shymkent-contacts">
+                                    <i class="fa fa-phone"></i>
+                                     Рабочий тел: +7-(7252)-77-77-77
+                                     <br style="margin-bottom: 15px;">
+                                    <i class="fa fa-whatsapp"></i>
+                                    Номер ватсап
+                                    +7-(777)-777-77-77
+                                </li>
+                                <li class="almaty-contacts">
+                                    <i class="fa fa-phone"></i>
+                                     Рабочий тел: +7-(727)-395-22-96
+                                     <br style="margin-bottom: 15px;">
+                                    <i class="fa fa-whatsapp"></i>
+                                    Номер ватсап
+                                    +7-(702)-821-48-72
                                 </li>
                             </ul>
                         </div>

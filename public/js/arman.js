@@ -25,11 +25,49 @@ $(document).ready( function() {
 	var spanChooseCity = document.getElementsByClassName("close-choose-city")[0];
 
 	//Если клик внутри этого блока по любому из елемнтов, то записываю куки на 1 час и скрываю модальное окно 
-	$('.btns-listener').click( function(event) {
-		event.stopPropagation();
-		$.cookie("modalChooseCity", "1house", {expires: 0});
+	// $('.btns-listener').click( function(event) {
+	// 	event.stopPropagation();
+	// 	$.cookie("modalChooseCity", "1house", {expires: 0});
+	// 	$(modalChooseCity).fadeOut();
+	// });
+
+	// Функция контактные данные для алматы
+	function almatyDatas() {
+		$('.top-pannel-box li.shymkent-contacts').css("display", "none");
+		$('.top-pannel-box li.almaty-contacts').css({"display" : "inline-block"});
+		$('.shymkent-email').css("display", "none");
+		$('.almaty-email').css("display", "inline-block");
+		$('.shymkentMap').css("display", "none");
+		$('iframe.almatyMap').css("display", "block");
+		$('#map-2gis').css("display", "none");
+		$('div#mobile-map-2gis-almaty').css("display", "block");
+	};
+
+	// Если выбрал Алматы
+	$( '.almaty-city' ).click( function () {
+		almatyDatas();
+		//$.cookie("modalChooseCity", "1house", {expires: 0});
+		var date = new Date();
+		// Устанавливаю куки на 5 минут ( 60 * 5000 ) это 5 минут, ( 60 * 3000 ) это 3минуты, и т.д.
+		date.setTime( date.getTime() + (60 * 5000) );
+		$.cookie('modalChooseCity', 'almaty', { expires: 0 });
 		$(modalChooseCity).fadeOut();
 	});
+
+	// Если выбрал Шымкент
+	$('.shymkent-city').click( function () {
+		$.cookie('modalChooseCity', 'shymkent', { expires: 0 });
+		$(modalChooseCity).fadeOut();
+	});
+
+	// Сохраняю значение переменной которая в куки
+	var cookieValue = $.cookie('modalChooseCity');
+
+	// Если куки равно Алматы то выводим контактные данные для алматы
+	if ( cookieValue == 'almaty' ){
+		almatyDatas();
+	}
+
 	// Если в куки нет имени modalChooseCity или его значение равно null, то вывести модальное окно о выборе города.
 	if ( $.cookie("modalChooseCity") == null )
 		{

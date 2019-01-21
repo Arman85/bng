@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Message;
 use App\Models\Textblock;
 use App\Models\Service;
+use App\Models\Slider;
 use Mail;
 use App\Mail\Sendmail;
 use App\Mail\Sendmail_service;
@@ -41,6 +42,7 @@ class FrontendController extends Controller
         // Arman
         $myservices = Service::get();
         $myservice = Service::where('id', $id)->first();
+        $sliders = Slider::all();
         //dd($myservice);
 
     	return view('frontend.index')->with([
@@ -64,7 +66,8 @@ class FrontendController extends Controller
             'footer' => $footer,
     		'popup_phone' => $popup_phone,
             'myservices' => $myservices,
-            'myservice' => $myservice
+            'myservice' => $myservice,
+            'sliders' => $sliders
     	]);
     }
 

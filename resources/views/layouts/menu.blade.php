@@ -19,6 +19,10 @@
 </li>
 
 <li class="{{ Request::is('services*') ? 'active' : '' }}">
-    <a href="{!! route('services.index') !!}"><i class="fa fa-edit"></i><span>Services</span></a>
+    <a href="{!! route('services.index') !!}"><i class="fa fa-edit"></i><span>Услуги</span></a>
+</li>
+
+<li class="{{ Request::is('sliders*') ? 'active' : '' }}">
+    <a href="{!! route('sliders.index') !!}"><i class="fa fa-edit"></i><span>Сладер</span></a>
 </li>
 
