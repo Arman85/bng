@@ -998,6 +998,7 @@ $('.showMapChoose').click(function() {
 $('.map1').click(function() {
     $('.choose-map').fadeOut();
     $('.map-2gis').fadeIn();
+    $('.mapHeight doby.layout__body div.leaflet-popup-content-wrapper').css("width", "320px");
     $('#js-menuName').text('2GIS');
     /*sound();*/
     $('#nav-icon3').addClass('open');
@@ -1046,20 +1047,22 @@ $('.hideMapGoogle').click(function() {
 /* ===========================
   17.1 Yandex Maps API 
   ==========================*/
-ymaps.ready(init);
 
-function init(){ 
-    var myMap = new ymaps.Map("map", {
-        center: [42.317472, 69.585637],
-        zoom: 17
-    }); 
-    
-    var myPlacemark = new ymaps.Placemark([42.317472, 69.585637], {
-        hintContent: 'Мы здесь'
-    });
-    
-    myMap.geoObjects.add(myPlacemark);
-}
+// var cookieValueMobile = $.cookie('modalChooseCity');
+// console.log(cookieValueMobile);
+    ymaps.ready(init);
+    function init(){ 
+        var myMap = new ymaps.Map("map", {
+            center: [42.317472, 69.585637],
+            zoom: 17
+        });  
+        
+        var myPlacemark = new ymaps.Placemark([42.317472, 69.585637], {
+            hintContent: 'Мы здесь Шымкент'
+        });
+        
+        myMap.geoObjects.add(myPlacemark);
+    }
 
 $('iframe#myFrame').contents().find('div.myClass').append("Hallo, Welt!");
 

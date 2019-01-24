@@ -10,6 +10,7 @@ $(document).ready( function() {
  5. Validate forms
  6. AJAX sending forms
  7. Custom code
+ 8. Leaflet map init
 ============================*/	
 
 /*===========================
@@ -39,6 +40,9 @@ $(document).ready( function() {
 		$('.almaty-email').css("display", "inline-block");
 		$('.shymkentMap').css("display", "none");
 		$('iframe.almatyMap').css("display", "block");
+		$('.mobile-map-2gis').css("display", "none");
+		$("#map-yandex-mobile-index-almaty").css("display", "block");
+		$('div.mymap-2gis').css("height", "100%");
 		// $('#map-2gis').css("display", "none");
 		// $('div#mobile-map-2gis-almaty').css("display", "block");
 	};
@@ -300,4 +304,22 @@ function validateFormCallOrder() {
  $('#sphone').mask('+7(000)-000-00-00');
  $('#mphone').mask('+7(000)-000-00-00');
 
-});
+ /*===========================
+	8. Leaftlet map init
+=============================*/
+	var leaflet = L.map('mapLeafletAlmatyIndex').setView([43.234713, 76.899651], 17);
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+	}).addTo(leaflet);
+
+	//var marker = L.marker([43.234713, 76.899651]).addTo(leaflet);
+
+	var popup = L.popup()
+    .setLatLng([43.234713, 76.899651])
+    .setContent("Бионгруп Алматы")
+    .openOn(leaflet);
+
+}); //end document ready

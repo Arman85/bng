@@ -13,6 +13,29 @@
     <meta name="theme-color" content="#008cd0">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
+    <!-- leaflet map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+    <!-- end leaflet map -->
+    <!-- 2gis include -->
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <!-- 2gis init -->
+    <script type="text/javascript">
+        var mapTwoGis;
+        DG.then(function () {
+            mapTwoGis = DG.map('map-2gis', {
+                center: [42.317472, 69.585637],
+                zoom: 17
+            });
+            DG.marker([42.317472, 69.585637]).addTo(mapTwoGis).bindPopup('ТОО Biongroup');
+        });
+    </script>
+
 </head>
 <body>
 <!-- CLick sounds -->
@@ -411,16 +434,20 @@
     <!-- Shymkent -->
     <div class="mymap-2gis">
 
-      <span class="hideMap2gis">Назад</span>   
+      <!-- <span class="hideMap2gis">Назад</span>  -->  
       <iframe frameborder="no" style=" box-sizing: border-box;" class="mapHeight shymkentMap" src="http://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A42.317444%2C%22lon%22%3A69.585614%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22shymkent%22%7D%2C%22org%22%3A%2270000001025819458%22%7D"></iframe>
     
     <!-- Almaty -->
-      <iframe frameborder="no" style=" box-sizing: border-box;" class="mapHeight almatyMap" src="https://2gis.kz/almaty/query/%D0%B1%D0%B8%D0%BE%D0%BD%20%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B0/firm/9429940000793925?queryState=center%2F76.90052%2C43.234835%2Fzoom%2F18"></iframe>
+      <!-- <iframe frameborder="no" style=" box-sizing: border-box;" class="mapHeight almatyMap" src="https://2gis.kz/almaty/query/%D0%B1%D0%B8%D0%BE%D0%BD%20%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B0/firm/9429940000793925?queryState=center%2F76.90052%2C43.234835%2Fzoom%2F18"></iframe> -->
     </div>
     <!-- For mobile version -->
     <div class="mobile-map-2gis">
         <div id="map-2gis"></div>    
     </div> 
+    <div id="map-yandex-mobile-index-almaty">
+        <!-- <iframe src="https://yandex.kz/map-widget/v1/-/CBRciJespD" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe> -->
+        <div id="mapLeafletAlmatyIndex"></div>
+    </div>
     <!-- End map -->
 </main>
 
@@ -534,21 +561,6 @@
     <script src="/js/app.js"></script>
     <script src="{{ asset('js/arman.js') }}"></script>
     <script src="{{ asset('js/jquery.sweet-modal.min.js') }}"></script>
-
-    <!-- 2gis include -->
-    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-    <!-- 2gis init -->
-    <script type="text/javascript">
-        var cookieValueMobile = $.cookie('modalChooseCity');
-        var mapTwoGis;
-            DG.then(function () {
-                mapTwoGis = DG.map('map-2gis', {
-                    center: [42.317472, 69.585637],
-                    zoom: 17
-                });
-                DG.marker([42.317472, 69.585637]).addTo(mapTwoGis).bindPopup('ТОО Biongroup');
-            });
-    </script>
 </body>
 
 </html>

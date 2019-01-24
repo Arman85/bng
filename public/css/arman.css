@@ -405,7 +405,8 @@ div.lic-slider .slick-next {
 
 /*Карта*/
 .mymap-2gis {
-	height: 100vh;
+	height: 60vh;
+	/*height: 100%;*/
 }
 
 /*About*/
@@ -918,6 +919,10 @@ div.modal-header {
 }*/
 /*2gis for mobile end*/
 
+#map-yandex-mobile-index-almaty {
+	display: none;
+}
+
 /*Responsive*/
 @media (min-width: 1550px) {
 	.btn-box {
@@ -1104,6 +1109,10 @@ div.modal-header {
 		padding-top: 50px;
 	}
 
+	div.leaflet-popup-content-wrapper {
+		width: 320px !important;
+	}
+
 	/*div.exp img {
 		width: 80%;
 	}*/
@@ -1197,5 +1206,7 @@ div.modal-header {
 
 /*End almaty city*/
 
-
+#mapLeafletAlmatyIndex {
+	height: 500px;
+}
 
