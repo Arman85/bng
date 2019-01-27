@@ -41,7 +41,7 @@ $(document).ready( function() {
 		$('.shymkentMap').css("display", "none");
 		$('iframe.almatyMap').css("display", "block");
 		$('.mobile-map-2gis').css("display", "none");
-		$("#map-yandex-mobile-index-almaty").css("display", "block");
+		$("#map-yandex-mobile-index-almaty").css({"display":"block", "padding":"15px" });
 		$('div.mymap-2gis').css("height", "100%");
 		// $('#map-2gis').css("display", "none");
 		// $('div#mobile-map-2gis-almaty').css("display", "block");
