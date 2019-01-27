@@ -45,6 +45,16 @@ $(document).ready( function() {
 		$('div.mymap-2gis').css("height", "100%");
 		// $('#map-2gis').css("display", "none");
 		// $('div#mobile-map-2gis-almaty').css("display", "block");
+
+		// Инициализирую карту для Алматы
+		var mapTwoGis;
+        DG.then(function () {
+            mapTwoGis = DG.map('mapLeafletAlmatyIndex', {
+                center: [43.234713, 76.899651],
+                zoom: 17
+            });
+            DG.marker([43.234713, 76.899651]).addTo(mapTwoGis).bindPopup('ТОО Biongroup Алматы');
+        });  
 	};
 
 	// Если выбрал Алматы
@@ -70,7 +80,16 @@ $(document).ready( function() {
 	// Если куки равно Алматы то выводим контактные данные для алматы
 	if ( cookieValue == 'almaty' ){
 		almatyDatas();
-	}
+	} else { // иначе если не равно Алматы то Шымкент, и инициализирую карты для Шымкента
+		var mapTwoGis;
+            DG.then(function () {
+                mapTwoGis = DG.map('map-2gis', {
+                    center: [42.317472, 69.585637],
+                    zoom: 17
+                });
+                DG.marker([42.317472, 69.585637]).addTo(mapTwoGis).bindPopup('ТОО Biongroup Шымкент');
+            }); 
+		}
 
 	// Если в куки нет имени modalChooseCity или его значение равно null, то вывести модальное окно о выборе города.
 	if ( $.cookie("modalChooseCity") == null )
