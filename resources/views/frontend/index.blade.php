@@ -22,19 +22,6 @@
    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
    crossorigin=""></script>
     <!-- end leaflet map -->
-    <!-- 2gis include -->
-    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-    <!-- 2gis init -->
-    <script type="text/javascript">
-        var mapTwoGis;
-        DG.then(function () {
-            mapTwoGis = DG.map('map-2gis', {
-                center: [42.317472, 69.585637],
-                zoom: 17
-            });
-            DG.marker([42.317472, 69.585637]).addTo(mapTwoGis).bindPopup('ТОО Biongroup');
-        });
-    </script>
 
 </head>
 <body>
@@ -561,6 +548,34 @@
     <script src="/js/app.js"></script>
     <script src="{{ asset('js/arman.js') }}"></script>
     <script src="{{ asset('js/jquery.sweet-modal.min.js') }}"></script>
+
+    <!-- 2gis include -->
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <!-- 2gis init -->
+    <script type="text/javascript">
+        var cookieValue = $.cookie('modalChooseCity');
+        //alert(cookieValue);
+        if (cookieValue == 'almaty') {
+            var mapTwoGis;
+            DG.then(function () {
+                mapTwoGis = DG.map('mapLeafletAlmatyIndex', {
+                    center: [43.234713, 76.899651],
+                    zoom: 17
+                });
+                DG.marker([43.234713, 76.899651]).addTo(mapTwoGis).bindPopup('ТОО Biongroup Алматы');
+            });    
+        } else if (cookieValue == 'shymkent') {
+            var mapTwoGis;
+            DG.then(function () {
+                mapTwoGis = DG.map('map-2gis', {
+                    center: [42.317472, 69.585637],
+                    zoom: 17
+                });
+                DG.marker([42.317472, 69.585637]).addTo(mapTwoGis).bindPopup('ТОО Biongroup Шымкент');
+            });            
+        }
+    </script>
+
 </body>
 
 </html>

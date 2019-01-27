@@ -955,6 +955,10 @@ div.modal-header {
 		margin-right: 0;
 		
 	}
+
+	div.top-pannel-box li {
+		font-size: .73rem;
+	}
 }
 
 @media (max-width: 991.98px) {

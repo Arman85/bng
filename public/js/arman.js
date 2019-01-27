@@ -307,19 +307,19 @@ function validateFormCallOrder() {
  /*===========================
 	8. Leaftlet map init
 =============================*/
-	var leaflet = L.map('mapLeafletAlmatyIndex').setView([43.234713, 76.899651], 17);
-	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'your.mapbox.access.token'
-	}).addTo(leaflet);
+	// var leaflet = L.map('mapLeafletAlmatyIndex').setView([43.234713, 76.899651], 17);
+	// L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+ //    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+ //    maxZoom: 18,
+ //    id: 'mapbox.streets',
+ //    accessToken: 'your.mapbox.access.token'
+	// }).addTo(leaflet);
 
-	//var marker = L.marker([43.234713, 76.899651]).addTo(leaflet);
+	// //var marker = L.marker([43.234713, 76.899651]).addTo(leaflet);
 
-	var popup = L.popup()
-    .setLatLng([43.234713, 76.899651])
-    .setContent("Бионгруп Алматы")
-    .openOn(leaflet);
+	// var popup = L.popup()
+ //    .setLatLng([43.234713, 76.899651])
+ //    .setContent("Бионгруп Алматы")
+ //    .openOn(leaflet);
 
 }); //end document ready
