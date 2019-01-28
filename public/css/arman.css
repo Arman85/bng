@@ -923,6 +923,10 @@ div.modal-header {
 	display: none;
 }
 
+.almatyMobileChooseMap {
+	display: none;
+}
+
 /*Responsive*/
 @media (min-width: 1550px) {
 	.btn-box {

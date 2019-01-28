@@ -80,6 +80,7 @@ $(document).ready( function() {
 	// Если куки равно Алматы то выводим контактные данные для алматы
 	if ( cookieValue == 'almaty' ){
 		almatyDatas();
+		$('.map-2gis').find('iframe').css("height", "100%");
 	} else { // иначе если не равно Алматы то Шымкент, и инициализирую карты для Шымкента
 		var mapTwoGis;
             DG.then(function () {
@@ -103,6 +104,22 @@ $(document).ready( function() {
 		{
 			$(modalChooseCity).fadeOut();
 		}
+
+		$('.map2').click(function() {
+			$('.choose-map').fadeOut();
+			$('.map-google').fadeIn();
+			if (cookieValue != 'shymkent') {
+				$('.almatyMobileChooseMap').css("display", "block");
+				$('#googlemap').css("display", "none");
+			}else {
+				$('#googlemap').css("display", "block");
+				$('.almatyMobileChooseMap').css("display", "none");
+			}	
+			$('#js-menuName').text('Google Maps');
+			$('#nav-icon3').addClass('open');
+			allClosed = false;
+			/*sound();*/
+		});
 
 	// When the user clicks on <span> (x), close the modal 
 	$(btnChooseCity).click( function(){
