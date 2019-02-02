@@ -88,6 +88,9 @@ $(document).ready( function() {
 	        
 	        myMap.geoObjects.add(myPlacemark);
 	    }
+
+	    // Прячу google карту алматы
+	    //$("div#googlemap").css("display", "none");
 	}
 
 	// Если выбрал Алматы
@@ -145,10 +148,12 @@ $(document).ready( function() {
 		$('.map2').click(function() {
 			$('.choose-map').fadeOut();
 			$('.map-google').fadeIn();
-			if (cookieValue != 'shymkent') {
+			if ($.cookie("modalChooseCity") != 'shymkent') {
+				alert($.cookie("modalChooseCity"));
 				$('.almatyMobileChooseMap').css("display", "block");
 				$('#googlemap').css("display", "none");
 			}else {
+				alert($.cookie("modalChooseCity"));
 				$('#googlemap').css("display", "block");
 				$('.almatyMobileChooseMap').css("display", "none");
 			}	
