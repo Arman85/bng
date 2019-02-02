@@ -1005,14 +1005,14 @@ $('.map1').click(function() {
   allClosed = false;
 });
 
-$('.map2').click(function() {
-    $('.choose-map').fadeOut();
-    $('.map-google').fadeIn();
-    $('#js-menuName').text('Google Maps');
-    $('#nav-icon3').addClass('open');
-  allClosed = false;
-    /*sound();*/
-});
+// $('.map2').click(function() {
+//     $('.choose-map').fadeOut();
+//     $('.map-google').fadeIn();
+//     $('#js-menuName').text('Google Maps');
+//     $('#nav-icon3').addClass('open');
+//   allClosed = false;
+//     /*sound();*/
+// });
 
 // $('.map3').click(function() {
 //     $('.choose-map').fadeOut();
