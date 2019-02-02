@@ -41,7 +41,8 @@
          <span class="hideMapYandex">Назад</span>   
 
      <div id="map" class="mapHeight"></div>
-
+     <!-- <div id="mapAlmaty" class="mapHeight"></div>
+ -->
      
 </div>  
 
@@ -51,8 +52,9 @@
     <!-- Mobile for Shymkent map -->
     <div id="googlemap" class="mapHeight"></div>
     <!-- Mobile for Almaty map -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d726.699857319741!2d76.8992703!3d43.2346647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388369239d7cf81b%3A0xfc0bcf9fd95c49c6!2z0YPQu9C40YbQsCDQltCw0YDQvtC60L7QstCwIDE1Mywg0JDQu9C80LDRgtGLIDA1MDAwMA!5e0!3m2!1sru!2skz!4v1548649094251" width="600" height="100%" frameborder="0" style="border:0" allowfullscreen class="almatyMobileChooseMap"></iframe>
-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d726.699857319741!2d76.8992703!3d43.2346647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388369239d7cf81b%3A0xfc0bcf9fd95c49c6!2z0YPQu9C40YbQsCDQltCw0YDQvtC60L7QstCwIDE1Mywg0JDQu9C80LDRgtGLIDA1MDAwMA!5e0!3m2!1sru!2skz!4v1548649094251" width="600" height="90%" frameborder="0" style="border:0;" allowfullscreen class="almatyMobileChooseMap">
+      </iframe>
+    
 </div> 
 
 <script>

@@ -1005,14 +1005,14 @@ $('.map1').click(function() {
   allClosed = false;
 });
 
-// $('.map2').click(function() {
-//     $('.choose-map').fadeOut();
-//     $('.map-google').fadeIn();
-//     $('#js-menuName').text('Google Maps');
-//     $('#nav-icon3').addClass('open');
-//   allClosed = false;
-//     /*sound();*/
-// });
+$('.map2').click(function() {
+    $('.choose-map').fadeOut();
+    $('.map-google').fadeIn();
+    $('#js-menuName').text('Google Maps');
+    $('#nav-icon3').addClass('open');
+  allClosed = false;
+    /*sound();*/
+});
 
 // $('.map3').click(function() {
 //     $('.choose-map').fadeOut();
@@ -1069,17 +1069,16 @@ $('.hideMapGoogle').click(function() {
 /* ===========================
   17.2 Google Maps API 
   ==========================*/
+  var map;
+  var cityLoc = {lat: 42.317472, lng: 69.585637};
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('googlemap'), {
+      center: cityLoc,
+      zoom: 17
+    });
 
-var map;
-var cityLoc = {lat: 42.317472, lng: 69.585637};
-function initMap() {
-  map = new google.maps.Map(document.getElementById('googlemap'), {
-    center: cityLoc,
-    zoom: 17
-  });
-  
-  var marker = new google.maps.Marker({position: cityLoc, map: map});
-}
+    var marker = new google.maps.Marker({position: cityLoc, map: map});
+  }
 
 /* ===========================
   18. Writing to CEO

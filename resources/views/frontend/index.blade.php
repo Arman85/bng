@@ -551,10 +551,7 @@
 
     <!-- 2gis include -->
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-    <!-- 2gis init -->
-    <script type="text/javascript">
-        
-    </script>
+
 
 </body>
 
