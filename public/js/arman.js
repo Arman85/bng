@@ -71,9 +71,6 @@ $(document).ready( function() {
 	        
 	        myMap.geoObjects.add(myPlacemark);
 	    }
-
-	    // google map
-	    
 	};
 
 	function shymkentDatas () {
@@ -91,18 +88,6 @@ $(document).ready( function() {
 	        
 	        myMap.geoObjects.add(myPlacemark);
 	    }
-
-	    // google map
-	    // var map;
-	    // var cityLoc = {lat: 42.317472, lng: 69.585637};
-	    // function initMap() {
-	    // 	map = new google.maps.Map(document.getElementById('googlemap'), {
-	    // 		center: cityLoc,
-	    // 		zoom: 17
-	    // 	});
-	    	
-	    // 	var marker = new google.maps.Marker({position: cityLoc, map: map});
-	    // }
 	}
 
 	// Если выбрал Алматы
