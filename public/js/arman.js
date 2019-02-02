@@ -149,11 +149,11 @@ $(document).ready( function() {
 			$('.choose-map').fadeOut();
 			$('.map-google').fadeIn();
 			if ($.cookie("modalChooseCity") != 'shymkent') {
-				alert($.cookie("modalChooseCity"));
+				//alert($.cookie("modalChooseCity"));
 				$('.almatyMobileChooseMap').css("display", "block");
 				$('#googlemap').css("display", "none");
 			}else {
-				alert($.cookie("modalChooseCity"));
+				//alert($.cookie("modalChooseCity"));
 				$('#googlemap').css("display", "block");
 				$('.almatyMobileChooseMap').css("display", "none");
 			}	
