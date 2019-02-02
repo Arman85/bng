@@ -54,7 +54,7 @@ $(document).ready( function() {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
@@ -63,7 +63,7 @@ $(document).ready( function() {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -1014,14 +1014,14 @@ $('.map1').click(function() {
 //     /*sound();*/
 // });
 
-$('.map3').click(function() {
-    $('.choose-map').fadeOut();
-    $('.map-yandex').fadeIn();
-    $('#js-menuName').text('Yandex Maps');
-    $('#nav-icon3').addClass('open');
-  allClosed = false;
-    /*sound();*/
-});
+// $('.map3').click(function() {
+//     $('.choose-map').fadeOut();
+//     $('.map-yandex').fadeIn();
+//     $('#js-menuName').text('Yandex Maps');
+//     $('#nav-icon3').addClass('open');
+//   allClosed = false;
+//     /*sound();*/
+// });
 
 $('.hideMap2gis').click(function() {
     $('.choose-map').fadeIn();
@@ -1050,21 +1050,21 @@ $('.hideMapGoogle').click(function() {
 
 // var cookieValueMobile = $.cookie('modalChooseCity');
 // console.log(cookieValueMobile);
-    ymaps.ready(init);
-    function init(){ 
-        var myMap = new ymaps.Map("map", {
-            center: [42.317472, 69.585637],
-            zoom: 17
-        });  
+//     ymaps.ready(init);
+//     function init(){ 
+//         var myMap = new ymaps.Map("map", {
+//             center: [42.317472, 69.585637],
+//             zoom: 17
+//         });  
         
-        var myPlacemark = new ymaps.Placemark([42.317472, 69.585637], {
-            hintContent: 'Мы здесь Шымкент'
-        });
+//         var myPlacemark = new ymaps.Placemark([42.317472, 69.585637], {
+//             hintContent: 'Мы здесь Шымкент'
+//         });
         
-        myMap.geoObjects.add(myPlacemark);
-    }
+//         myMap.geoObjects.add(myPlacemark);
+//     }
 
-$('iframe#myFrame').contents().find('div.myClass').append("Hallo, Welt!");
+// $('iframe#myFrame').contents().find('div.myClass').append("Hallo, Welt!");
 
 /* ===========================
   17.2 Google Maps API 

@@ -105,6 +105,7 @@ $(document).ready( function() {
 			$(modalChooseCity).fadeOut();
 		}
 
+		// Google map
 		$('.map2').click(function() {
 			$('.choose-map').fadeOut();
 			$('.map-google').fadeIn();
@@ -116,6 +117,44 @@ $(document).ready( function() {
 				$('.almatyMobileChooseMap').css("display", "none");
 			}	
 			$('#js-menuName').text('Google Maps');
+			$('#nav-icon3').addClass('open');
+			allClosed = false;
+			/*sound();*/
+		});
+
+		// Yandex map
+		ymaps.ready(init);
+		$('.map3').click(function() {
+			$('.choose-map').fadeOut();
+			if ( cookieValue == 'shymkent' ){
+				$('.map-yandex').fadeIn();
+				function init(){ 
+					var myMap = new ymaps.Map("map", {
+						center: [42.317472, 69.585637],
+						zoom: 17
+					});  
+					var myPlacemark = new ymaps.Placemark([42.317472, 69.585637], {
+						hintContent: 'Мы здесь Шымкент'
+					});
+
+					myMap.geoObjects.add(myPlacemark);
+				}
+				$('iframe#myFrame').contents().find('div.myClass').append("Hallo, Welt!");	
+			} else {
+				function init(){ 
+					var myMap = new ymaps.Map("map", {
+						center: [43.234713, 76.899651],
+						zoom: 17
+					});  
+					var myPlacemark = new ymaps.Placemark([42.317472, 69.585637], {
+						hintContent: 'Мы здесь Алматы'
+					});
+
+					myMap.geoObjects.add(myPlacemark);
+				}
+				$('iframe#myFrame').contents().find('div.myClass').append("Hallo, Welt!");
+			}
+			$('#js-menuName').text('Yandex Maps');
 			$('#nav-icon3').addClass('open');
 			allClosed = false;
 			/*sound();*/
