@@ -209,12 +209,12 @@ $(window).scroll(function() {
 $(document).ready(function () {
     $('#tomain').click(function() {
       $('html, body').animate({
-        scrollTop: $("main").offset().top
+        scrollTop: $("#vue-header").offset().top
       }, 2000)
     }), 
     $('#toservices').click(function() {
       $('html, body').animate({
-        scrollTop: $("#vue-tab").offset().top - 90
+        scrollTop: $(".responsive-container").offset().top - 90
       }, 2000)
     }), 
     $('#toabout').click(function() {
