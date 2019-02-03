@@ -37,6 +37,7 @@ $(document).ready( function() {
 	function almatyDatas() {
 		$('.top-pannel-box li.shymkent-contacts').css("display", "none");
 		$('.top-pannel-box li.almaty-contacts').css({"display" : "inline-block"});
+		$('.footerShymkentDatas').css("display", "none");
 		$('.shymkent-email').css("display", "none");
 		$('.almaty-email').css("display", "inline-block");
 		$('.shymkentMap').css("display", "none");
@@ -91,6 +92,8 @@ $(document).ready( function() {
 
 	    // Прячу google карту алматы
 	    //$("div#googlemap").css("display", "none");
+
+	    $("div.footerAlmatyDatas").css("display", "none");
 	}
 
 	// Если выбрал Алматы

@@ -927,6 +927,10 @@ div.modal-header {
 	display: none;
 }
 
+.forMobile {
+	display: none;
+}
+
 /*Responsive*/
 @media (min-width: 1550px) {
 	.btn-box {
@@ -978,6 +982,15 @@ div.modal-header {
 }
 
 @media (max-width: 991.98px) {
+
+	.forDesktop {
+		display: none;
+	}
+
+	.forMobile {
+		display: block;
+	}
+
 	.mobileSwitch {
 		display: none;
 	}

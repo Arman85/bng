@@ -40,15 +40,39 @@
                     <div class="clear clearHeader"></div>
                     <div class="col-md-2 col-lg-offset-1">
                         <div class="top-pannel-box hidden-sm hidden-xs">
-                            <h4 class="marginBott">Время работы:</h4>
-                            <ul>
-                                <li>
-                                    <i class="fa fa-clock-o"></i>
-                                     пн-пт c 09-00 - 18-00
-                                     <br>
-                                    сб-вс выходной день.
-                                </li>
-                            </ul>
+                            <div class="forDesktop">
+                                <h4 class="marginBott">Время работы:</h4>
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-clock-o"></i>
+                                        пн-пт c 09-00 - 18-00
+                                        <br>
+                                        сб-вс выходной день.
+                                    </li>
+                                </ul>    
+                            </div>
+                            <div class="forMobile">
+                                <h4 class="headerTitle marginBott">Контакты:</h4>
+                                <ul>
+                                    <li class="shymkent-contacts">
+                                        <i class="fa fa-phone"></i>
+                                        Рабочий тел: +7-(7252)-77-77-77
+                                        <br style="margin-bottom: 15px;">
+                                        <i class="fa fa-whatsapp"></i>
+                                        Номер ватсап
+                                        +7-(777)-777-77-77
+                                    </li>
+                                    <li class="almaty-contacts">
+                                        <i class="fa fa-phone"></i>
+                                        Рабочий тел: +7-(727)-395-22-96
+                                        <br style="margin-bottom: 15px;">
+                                        <i class="fa fa-whatsapp"></i>
+                                        Номер ватсап
+                                        +7-(702)-821-48-72
+                                    </li>
+                                </ul>    
+                            </div>
+
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3">
@@ -68,25 +92,39 @@
                     </div>
                     <div class="col-lg-2 col-md-2">
                         <div class="top-pannel-box hidden-sm hidden-xs">
-                            <h4 class="headerTitle marginBott">Контакты:</h4>
-                            <ul>
-                                <li class="shymkent-contacts">
-                                    <i class="fa fa-phone"></i>
-                                     Рабочий тел: +7-(7252)-77-77-77
-                                     <br style="margin-bottom: 15px;">
-                                    <i class="fa fa-whatsapp"></i>
-                                    Номер ватсап
-                                    +7-(777)-777-77-77
-                                </li>
-                                <li class="almaty-contacts">
-                                    <i class="fa fa-phone"></i>
-                                     Рабочий тел: +7-(727)-395-22-96
-                                     <br style="margin-bottom: 15px;">
-                                    <i class="fa fa-whatsapp"></i>
-                                    Номер ватсап
-                                    +7-(702)-821-48-72
-                                </li>
-                            </ul>
+                            <div class="forDesktop">
+                                <h4 class="headerTitle marginBott">Контакты:</h4>
+                                <ul>
+                                    <li class="shymkent-contacts">
+                                        <i class="fa fa-phone"></i>
+                                        Рабочий тел: +7-(7252)-77-77-77
+                                        <br style="margin-bottom: 15px;">
+                                        <i class="fa fa-whatsapp"></i>
+                                        Номер ватсап
+                                        +7-(777)-777-77-77
+                                    </li>
+                                    <li class="almaty-contacts">
+                                        <i class="fa fa-phone"></i>
+                                        Рабочий тел: +7-(727)-395-22-96
+                                        <br style="margin-bottom: 15px;">
+                                        <i class="fa fa-whatsapp"></i>
+                                        Номер ватсап
+                                        +7-(702)-821-48-72
+                                    </li>
+                                </ul>    
+                            </div>
+                            
+                            <div class="forMobile">
+                                <h4 class="marginBott">Время работы:</h4>
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-clock-o"></i>
+                                        пн-пт c 09-00 - 18-00
+                                        <br>
+                                        сб-вс выходной день.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3" id="btnBoxContainer">

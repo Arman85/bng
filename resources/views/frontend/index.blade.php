@@ -449,20 +449,42 @@
             </div>
             <div class="col-md-4 col-md-push-7 col-sm-6 col-lg-4">
                 <div class="text-center">
-                    <div class="top-phone">
-                        <span>
-                            <i class="fa fa-phone"></i>
-                             +7 (707)
-                        </span>
-                        <a href="tel:77077400825">740-08-25</a>
+                    <!-- Shymkent contacts -->
+                    <div class="footerShymkentDatas">
+                        <div class="top-phone">
+                            <span>
+                                <i class="fa fa-phone"></i>
+                                +7 (7252)
+                            </span>
+                            <a href="tel:77077400825">77-77-77</a>
+                        </div>
+                        <div class="top-phone">
+                            <span>
+                                <i class="fa fa-phone"></i>
+                                +7 (777)
+                            </span>
+                            <a href="tel:77077400825">777-77-77</a>
+                        </div>    
                     </div>
-                    <div class="top-phone">
-                        <span>
-                            <i class="fa fa-phone"></i>
-                             +7 (707)
-                        </span>
-                        <a href="tel:77077400825">740-08-25</a>
+                    <!-- End shymkent contacts -->
+                    <!-- Almaty contacts -->
+                    <div class="footerAlmatyDatas">
+                        <div class="top-phone">
+                            <span>
+                                <i class="fa fa-phone"></i>
+                                +7 (727)
+                            </span>
+                            <a href="tel:77077400825">395-22-96</a>
+                        </div>
+                        <div class="top-phone">
+                            <span>
+                                <i class="fa fa-phone"></i>
+                                +7 (702)
+                            </span>
+                            <a href="tel:77077400825">821-48-72</a>
+                        </div>    
                     </div>
+                    <!-- End Almaty contacts -->
                     <div class="top-email">
                         <span>
                             <i class="fa fa-envelope"></i>
@@ -486,9 +508,13 @@
                 <div class="top-pannel-box">
                     <h4>Адреса организации:</h4>
                     <ul>
-                        <li>
+                        <li class="footerShymkentDatas">
                             <i class="fa fa-map-marker"></i>
                             г. Шымкент, ул. Бейбитшилик 4.
+                        </li>
+                        <li class="footerAlmatyDatas">
+                            <i class="fa fa-map-marker"></i>
+                            г. Алматы, ул. Жарокова, 153, офис 54.
                         </li>
                     </ul>
                 </div>
