@@ -968,10 +968,8 @@ div.modal-header {
 		font-size: .73rem;
 	}
 
-	.modal-content-choose-city {
-		width: 25%;
-	}
-
+	.modal-content-choose-city,
+	.modal-content-service-order,
 	.modal-content-call-order {
 		width: 25%;
 	}
