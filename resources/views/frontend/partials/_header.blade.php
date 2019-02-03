@@ -21,9 +21,9 @@
                                         Оценочная комания
                                     </a>   
                                     <br>
-                                    <a href="/" class="logo-title2">
+                                    <!-- <a href="/" class="logo-title2">
                                         Работаем на рынке с 2002 года
-                                    </a>
+                                    </a> -->
                                 </li>
                             </ul>
                             <!-- End logo -->
@@ -37,10 +37,10 @@
                             <!-- End of Hamburger mobile -->
                         </div>
                     </div>
-                    <div class="clear" style="margin-bottom: 60px;"></div>
+                    <div class="clear clearHeader"></div>
                     <div class="col-md-2 col-lg-offset-1">
                         <div class="top-pannel-box hidden-sm hidden-xs">
-                            <h4>Время работы:</h4>
+                            <h4 class="marginBott">Время работы:</h4>
                             <ul>
                                 <li>
                                     <i class="fa fa-clock-o"></i>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-lg-2 col-md-3">
                         <div class="top-pannel-box hidden-sm hidden-xs">
-                            <h4>Адрес организации:</h4>
+                            <h4 class="headerTitle marginBott">Адрес организации:</h4>
                             <ul>
                                 <li class="shymkent-contacts">
                                     <i class="fa fa-map-marker"></i>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="col-lg-2 col-md-2">
                         <div class="top-pannel-box hidden-sm hidden-xs">
-                            <h4>Контакты:</h4>
+                            <h4 class="headerTitle marginBott">Контакты:</h4>
                             <ul>
                                 <li class="shymkent-contacts">
                                     <i class="fa fa-phone"></i>
@@ -89,7 +89,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3">
+                    <div class="col-lg-2 col-md-3" id="btnBoxContainer">
                         <div class="btn-box">
                             <!-- <button class="showOrderBox specialButton" id="">Заказать звонок</button> -->
                             <button class="" id="myBtn-call-order">Заказать звонок</button>

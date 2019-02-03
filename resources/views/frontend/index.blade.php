@@ -57,7 +57,7 @@
         <div class="modal-content-choose-city" id="modal-content-choose-city-id">
             <div class="modal-header">
               <h2 class="title-popup">Добро пожаловать!<!-- <span class="close-choose-city">&times;</span> --></h2>  
-              <p class="sub-title-popup">Выберите свой регион для входа на сайт или просто нажмите на кнопку войти</p>
+              <p class="sub-title-popup">Выберите свой регион для входа на сайт.</p>
             </div>
             <div class="modal-body">
                 <div class="btns-listener">
@@ -68,7 +68,7 @@
                     </p>
                     <!-- <button type="" class="btn-popup btn-choose-city">Войти<img src="{{ asset('img/icons/sign-in.png') }}" alt=""></span></button> -->
                 </div>
-                <p class="short-description-popup">Дорогие друзья! Добро пожаловать на сайт оценочной компании ТОО «БИОН Group»</p>
+                <!-- <p class="short-description-popup">Дорогие друзья! Добро пожаловать на сайт оценочной компании ТОО «БИОН Group»</p> -->
             </div>
             <div class="modal-footer">
                 <h3><img src="{{ asset('img/bglogo.png') }}"></h3>
@@ -163,7 +163,7 @@
                             @if ( $loop->index <= 4 )
                             <li class="myserv">
                                 <a href="#">
-                                    <img src="img/services/{{ $myservice->img }}" alt="{{ $myservice->title }}" class="GREY" title="{{ $myservice->title }}" data-id="{{ $myservice->id }}">
+                                    <img src="img/services/index/{{ $myservice->img }}" alt="{{ $myservice->title }}" class="GREY" title="{{ $myservice->title }}" data-id="{{ $myservice->id }}">
                                     {{ $myservice->title }}
                                 </a>
                             </li>
@@ -177,7 +177,7 @@
                             @if ( $loop->index > 4 )  
                             <li class="myserv">
                                 <a href="#">
-                                    <img src="img/services/{{ $myservice->img }}" alt="{{ $myservice->title }}" class="GREY" title="{{ $myservice->title }}">
+                                    <img src="img/services/index/{{ $myservice->img }}" alt="{{ $myservice->title }}" class="GREY" title="{{ $myservice->title }}">
                                     {{ $myservice->title }}
                                 </a>
                             </li>
@@ -311,7 +311,7 @@
     <!-- About -->
     <div class="about">
         <h3><img src="{{ asset('img/bglogo.png') }}" alt="bng-logo"></h3>
-            {!! $about !!}      
+            {!! $about !!} 
         </div>
     </div>
     <!-- End of About -->
@@ -442,12 +442,12 @@
     {{--{!! $footer !!}--}}
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="col-md-4 col-sm-6 col-lg-4">
                 <a href="/" class="logo footer-logo"><img src="{{ asset('img/bglogo.png') }}" alt="Biongroup logo"></a>
                 <p class="footer-about">Оценка любого имущества, активов, бизнеса, убытков, оспаривание кадастровой стоимости, ценных бумаг на всей территории КЗ.</p>
-                <p class="footer-about">ТОО "BIONGROUP" © 2019</p>
+                <p class="footer-about companyName">ТОО "BIONGROUP" © 2019</p>
             </div>
-            <div class="col-md-3 col-md-push-7 col-sm-6 col-lg-3">
+            <div class="col-md-4 col-md-push-7 col-sm-6 col-lg-4">
                 <div class="text-center">
                     <div class="top-phone">
                         <span>
@@ -474,15 +474,15 @@
                     <div class="top-button">
                         <button class="btn-call-order-foter">Заказать звонок</button>
                     </div>
+                    <!-- <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
                     <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
                     <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
                     <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
                     <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
-                    <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
-                    <a href=""><img src="http://www.urdis.ru/img/vk.png"></a>
+                    <a href=""><img src="http://www.urdis.ru/img/vk.png"></a> -->
                 </div>
             </div>
-            <div class="col-md-3 col-md-offset-1 col-md-pull-3 col-sm-12 col-lg-3">
+            <div class="col-md-4 col-md-offset-1 col-md-pull-3 col-sm-12 col-lg-4">
                 <div class="top-pannel-box">
                     <h4>Адреса организации:</h4>
                     <ul>
@@ -504,7 +504,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <!-- <div class="col-lg-3">
                 <div class="top-pannel-box">
                     <h4>Услуги компании:</h4>
                     <ul class="menu-type-2">
@@ -520,7 +520,7 @@
                         <li><a><span class="fa fa-check"></span>Другой вид оценки</a></li>        
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </footer>

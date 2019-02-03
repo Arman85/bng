@@ -381,7 +381,8 @@ cursor: pointer;
 
 
 .mbx {
-	height: 68.25%;
+	/*height: 68.25%;*/
+	height: 100%;
 	overflow-y: auto;
 	padding-bottom: 35px;
 }
@@ -527,7 +528,7 @@ width: 100%;
 }
 .mb4{
 	width: 100%;
-	padding: 10px 25px 0;
+	padding: 25px 25px 25px;
 }
 .mb4 div {
 	width: 100%;

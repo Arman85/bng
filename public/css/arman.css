@@ -963,6 +963,18 @@ div.modal-header {
 	div.top-pannel-box li {
 		font-size: .73rem;
 	}
+
+	.modal-content-choose-city {
+		width: 25%;
+	}
+
+	.modal-content-call-order {
+		width: 25%;
+	}
+
+	.short-description-popup {
+		padding: 0 15px;
+	}
 }
 
 @media (max-width: 991.98px) {
@@ -1002,6 +1014,8 @@ div.modal-header {
 		background-position: -750px 0;
 		background-size: cover;
 		padding: 15px;
+		overflow: auto;
+		height: 360px;
 	}
 
 	.about p {
@@ -1121,6 +1135,36 @@ div.modal-header {
 		width: 320px !important;
 	}
 
+	.main-foot p.footer-about {
+		margin-bottom: 10px;
+	}
+
+	footer.main-foot p.companyName {
+		margin: 15px 0 10px 0;
+	}
+
+	a.logo-title1 {
+		top: -10px;
+	}
+
+	.top-pannel-box h4.headerTitle {
+		margin-top: -5px;
+	}
+
+	#btnBoxContainer {
+		position: fixed;
+		top: 60px;
+		left: 0;
+	}
+
+	div.clearHeader {
+		margin-bottom: 100px;
+	}
+
+	.marginBott {
+		margin-bottom: 15px;
+	}
+
 	/*div.exp img {
 		width: 80%;
 	}*/
@@ -1188,6 +1232,7 @@ div.modal-header {
 
 .clear {
 	clear: both;
+	margin-bottom: 60px;
 }
 
 /*Almaty city*/

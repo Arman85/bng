@@ -144,7 +144,7 @@ $(document).ready( function() {
 			$(modalChooseCity).fadeOut();
 		}
 
-		// Google map
+		// Google map. В мобильном меню при выборе карты google если не Шымкент то показываю Алматы
 		$('.map2').click(function() {
 			$('.choose-map').fadeOut();
 			$('.map-google').fadeIn();
