@@ -313,9 +313,11 @@
     <!-- End of We have already worked -->
 
     <!-- About -->
-    <div class="about content" id="content-1">
-        <h3><img src="{{ asset('img/bglogo.png') }}" alt="bng-logo"></h3>
-        {!! $about !!} 
+    <div class="about">
+        <h3 class="aboutTitle"><img src="{{ asset('img/bglogo.png') }}" alt="bng-logo"></h3>
+        <div id="content-1" class="content">
+            {!! $about !!}
+        </div> 
         <!-- </div> -->
     </div>
     <!-- End of About -->

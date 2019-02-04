@@ -5,7 +5,7 @@
         <div class="container header-container">
             <div class="top-pannel-content">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="mynav-wrapper">
                             <!-- Logo -->
                             <ul class="logos-list">
@@ -127,7 +127,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3" id="btnBoxContainer">
+                    <div class="col-lg-3 col-md-3" id="btnBoxContainer">
                         <div class="btn-box">
                             <!-- <button class="showOrderBox specialButton" id="">Заказать звонок</button> -->
                             <button class="" id="myBtn-call-order">Заказать звонок</button>
