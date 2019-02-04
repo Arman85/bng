@@ -12,6 +12,7 @@ $(document).ready( function() {
  7. Custom code
  8. Leaflet map init
  9. Choose maps in mobile menu
+ 10. Auto scroll init
 ============================*/	
 
 /*===========================
@@ -37,6 +38,7 @@ $(document).ready( function() {
 	function almatyDatas() {
 		$('.top-pannel-box li.shymkent-contacts').css("display", "none");
 		$('.top-pannel-box li.almaty-contacts').css({"display" : "inline-block"});
+		$('.footerAlmatyDatas').css("display", "block");
 		$('.footerShymkentDatas').css("display", "none");
 		$('.shymkent-email').css("display", "none");
 		$('.almaty-email').css("display", "inline-block");
@@ -72,6 +74,11 @@ $(document).ready( function() {
 	        
 	        myMap.geoObjects.add(myPlacemark);
 	    }
+
+	    $("#ccity option:selected").val("Алматы").html("Алматы");
+	    $("#call-order-city option:selected").val("Алматы").html("Алматы");
+	    $("#city-service-order option:selected").val("Алматы").html("Алматы");
+	    $("#city-service-order-mobile option:selected").val("Алматы").html("Алматы");
 	};
 
 	function shymkentDatas () {
@@ -93,7 +100,7 @@ $(document).ready( function() {
 	    // Прячу google карту алматы
 	    //$("div#googlemap").css("display", "none");
 
-	    $("div.footerAlmatyDatas").css("display", "none");
+	    //$("div.footerAlmatyDatas").css("display", "none");
 	}
 
 	// Если выбрал Алматы
@@ -404,7 +411,7 @@ function validateFormCallOrder() {
  //    .openOn(leaflet);
 
  /*===============================
-	10. Choose maps in mobile menu
+	9. Choose maps in mobile menu
 ==================================*/
 
 	// Yandex map
@@ -417,4 +424,65 @@ function validateFormCallOrder() {
 		/*sound();*/
 	});
 
+
 }); //end document ready
+
+
+// Вне document ready что бы код загрузился сразу
+/*===============================
+	10. Auto scroll init
+==================================*/
+$(window).on("load",function(){
+				
+				var content=$("#content-1"),autoScrollTimer=20000,autoScrollTimerAdjust,autoScroll;
+				
+				content.mCustomScrollbar({
+					scrollButtons:{enable:true},
+					callbacks:{
+						whileScrolling:function(){
+							autoScrollTimerAdjust=autoScrollTimer*this.mcs.topPct/100;
+						},
+						onScroll:function(){ 
+							if($(this).data("mCS").trigger==="internal"){AutoScrollOff();}
+						}
+					}
+				});
+				
+				content.addClass("auto-scrolling-on auto-scrolling-to-bottom");
+				AutoScrollOn("bottom");
+				
+				// $(".auto-scrolling-toggle").click(function(e){
+				// 	e.preventDefault();
+				// 	if(content.hasClass("auto-scrolling-on")){
+				// 		AutoScrollOff();
+				// 	}else{
+				// 		if(content.hasClass("auto-scrolling-to-top")){
+				// 			AutoScrollOn("top",autoScrollTimerAdjust);
+				// 		}else{
+				// 			AutoScrollOn("bottom",autoScrollTimer-autoScrollTimerAdjust);
+				// 		}
+				// 	}
+				// });
+				
+				function AutoScrollOn(to,timer){
+					if(!timer){timer=autoScrollTimer;}
+					content.addClass("auto-scrolling-on").mCustomScrollbar("scrollTo",to,{scrollInertia:timer,scrollEasing:"easeInOutSmooth"});
+					autoScroll=setTimeout(function(){
+						if(content.hasClass("auto-scrolling-to-top")){
+							AutoScrollOn("bottom",autoScrollTimer-autoScrollTimerAdjust);
+							content.removeClass("auto-scrolling-to-top").addClass("auto-scrolling-to-bottom");
+						}else{
+							AutoScrollOn("top",autoScrollTimerAdjust);
+							content.removeClass("auto-scrolling-to-bottom").addClass("auto-scrolling-to-top");
+						}
+					},timer);
+				}
+				
+				function AutoScrollOff(){
+					clearTimeout(autoScroll);
+					content.removeClass("auto-scrolling-on").mCustomScrollbar("stop");
+				}
+				
+			});
+
+

@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/desktop.css">
     <link rel="stylesheet" href="/css/vendor/lightbox.min.css">
+    
+    <!-- auto scroll -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.mCustomScrollbar.min.css') }}">
+
     <meta name="theme-color" content="#008cd0">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
@@ -95,7 +99,7 @@
                         <p class="city-select">
                             <select id="call-order-city" name="cityCallOrder">
                                 <option value="Шымкент" selected>Шымкент</option>
-                                <option value="Алматы">Алматы</option>
+                                <!-- <option value="Алматы">Алматы</option> -->
                             </select>
                         </p>
                         
@@ -133,7 +137,7 @@
                         <p class="city-select">
                             <select name="cityService" id="city-service-order">
                                 <option value="Шымкент" selected>Шымкент</option>
-                                <option value="Алматы">Алматы</option>
+                                <!-- <option value="Алматы">Алматы</option> -->
                             </select>
                         </p>
                     </p>
@@ -309,10 +313,10 @@
     <!-- End of We have already worked -->
 
     <!-- About -->
-    <div class="about">
+    <div class="about content" id="content-1">
         <h3><img src="{{ asset('img/bglogo.png') }}" alt="bng-logo"></h3>
-            {!! $about !!} 
-        </div>
+        {!! $about !!} 
+        <!-- </div> -->
     </div>
     <!-- End of About -->
     <!-- Licence block -->
@@ -392,7 +396,7 @@
                         <input type="text" name="phone" placeholder="Телефон" required id="cphone">
                         <select name="city" class="form-control" id="ccity">
                             <option value="Шымкент" selected>Шымкент</option>
-                            <option value="Алматы">Алматы</option>
+                            <!-- <option value="Алматы">Алматы</option> -->
                         </select>
                         <select name="when" class="form-control" id="cwhen" required>
                             <option value="" selected>Когда вам позвонить?</option>
@@ -575,10 +579,11 @@
     <script src="{{ asset('js/arman.js') }}"></script>
     <script src="{{ asset('js/jquery.sweet-modal.min.js') }}"></script>
 
+    <!-- auto scroll -->
+    <script type="text/javascript" src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+
     <!-- 2gis include -->
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-
-
 </body>
 
 </html>

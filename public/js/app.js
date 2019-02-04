@@ -459,7 +459,7 @@ function validateMessageFromPage() {
   }
 });
 $("#sendConsButton").click(function(e){
-
+    
     validateFormCons();
     var cname = $('#cname').val();
     var cphone = $('#cphone').val();

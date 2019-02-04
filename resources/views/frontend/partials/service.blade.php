@@ -15,7 +15,7 @@
             <input type="text" name="phone" placeholder="Номер телефона" id="sphone">
             <select name="cityServiceMobile" id="city-service-order-mobile">
                 <option value="Шымкент" selected>Шымкент</option>
-                <option value="Алматы">Алматы</option>
+                <!-- <option value="Алматы">Алматы</option> -->
             </select>
             <button id="sendmail_service">Заказать услугу</button>
             {{ csrf_field() }}

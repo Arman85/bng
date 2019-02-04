@@ -414,6 +414,10 @@ div.about {
 	background: url(../img/about.jpg) no-repeat center;
 	padding: 100px 18% 100px 50px;
 	background-size: 100%;
+	width: 100%;
+	height: 470px;
+	/*overflow-x: auto;*/
+	overflow-x: hidden;
 }
 
 .about h3 {
@@ -930,6 +934,21 @@ div.modal-header {
 .forMobile {
 	display: none;
 }
+
+.footerAlmatyDatas,
+.main-foot .top-pannel-box li.footerAlmatyDatas {
+	display: none;
+}
+
+section.top-pannel::before {
+	content: none;
+}
+
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag div.mCSB_dragger_bar{
+	background-color: rgba(0, 143, 214, 1);
+}
+
+.mCSB_dragger.mCSB_dragger_onDrag div.mCSB_dragger_bar
 
 /*Responsive*/
 @media (min-width: 1550px) {
