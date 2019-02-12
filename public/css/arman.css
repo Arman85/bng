@@ -978,6 +978,10 @@ section.top-pannel::before {
 	.form-what-interested {
 		text-align: right;
 	}
+
+	.header-container {
+		margin: 0 auto;
+	}
 }
 
 @media (max-width: 1366px) {
