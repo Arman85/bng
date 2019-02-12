@@ -141,7 +141,8 @@ ul.logos-list {
 
 .logo-title1 {
 	font-size: 25px;
-	top: -45px;
+	/*top: -45px;*/
+	top: -35px;
 }
 
 .logo-title2 {
@@ -982,6 +983,16 @@ section.top-pannel::before {
 	.header-container {
 		margin: 0 auto;
 	}
+
+	.logo-title1 {
+		top: -30px;
+	}
+
+	.modal-content-choose-city,
+	.modal-content-service-order,
+	.modal-content-call-order {
+		width: 30%;
+	}
 }
 
 @media (max-width: 1366px) {
@@ -996,12 +1007,6 @@ section.top-pannel::before {
 
 	div.top-pannel-box li {
 		font-size: .73rem;
-	}
-
-	.modal-content-choose-city,
-	.modal-content-service-order,
-	.modal-content-call-order {
-		width: 30%;
 	}
 
 	.short-description-popup {
